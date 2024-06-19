@@ -14,6 +14,18 @@ body::-webkit-scrollbar-thumb {
   .hero-img {
     width: 80%;
   }
+
+  #sticky-menu {
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+  }
+}
+
+#sticky-menu {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.25);
+  border-bottom-right-radius: 12px;
+  border-bottom-left-radius: 12px;
 }
 
 .orange-gradient-1 {
@@ -278,13 +290,4 @@ body::-webkit-scrollbar-thumb {
 
 .waveform {
   width: 100%;
-}
-
-#sticky-menu {
-  position: fixed;
-  background: rgba(0, 0, 0, 0.25);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border-bottom-right-radius: 12px;
-  border-bottom-left-radius: 12px;
 }
