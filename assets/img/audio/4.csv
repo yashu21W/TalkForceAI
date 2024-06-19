@@ -1,0 +1,48 @@
+Transcript
+bot: Hi. Thank you for calling Shuttle Fare. My name is Mary. How can I help?
+human:  I need to make a reservation.
+bot: Got it!
+bot: I can help with that.
+"bot: Could you please provide me with the details of your trip, like the airport you'll be traveling to or from, and your travel dates?"
+human:  From Denver Airport.
+bot: Great!
+human:  July second.
+bot: Perfect.
+bot: And will this be for an arrival or a departure from Denver Airport on July second?
+human:  Departure.
+"human: (Now the user said something inaudible, you would say:)"
+bot: .
+"bot: Sorry, I didn't catch that."
+bot: Could you please repeat?
+human:  Departure.
+bot: Thanks for confirming.
+bot: How many passengers will be traveling?
+human:  Two.
+bot: Got it.
+bot: And where will you be heading to from Denver Airport?
+human:  To the Marriott Denver West.
+bot: Perfect.
+"bot: So, just to confirm: you need a shuttle for two passengers departing from Denver Airport on July second, heading to the Marriott Denver West."
+bot: Is that correct?
+human:  Yes.
+bot: Great!
+bot: I'll get that reservation set up for you.
+"bot: Can I have your name and contact information, please?"
+human:  George Washington.
+human:  Seven two zero
+human:  three two nine
+human:  five five five eight.
+"bot: Thanks, George."
+"bot: So, your contact number is seven two zero three two nine five five five eight."
+bot: Is that correct?
+human:  Yes. Correct.
+bot: Awesome!
+bot: Your reservation is all set.
+bot: Is there anything else I can help you with today?
+human:  No.
+"bot: Alright, thank you for choosing Shuttlefare, George."
+bot: Have a great day!
+"human: (Now the user has not responded in a while, you would say:)"
+bot: Just checking in to see if there's anything else you need.
+"bot: If not, have a wonderful day!"
+human:  Thank you.

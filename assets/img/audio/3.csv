@@ -1,0 +1,7 @@
+Transcript
+bot: Hi. Thank you for calling Shuttle Fare. My name is Mary. How can I help?
+"human:  We are at the Santa Maria Airport, and I don't know where the shuttle is."
+bot: Please check the confirmation email sent to you for your driver's or dispatcher's contact details and airport arrival instructions.
+bot: Was this for an arrival or a departure?
+human:  Departure.
+"bot: For departures, please refer to the vendor's confirmation email for the dispatcher's contact details and pickup instructions."

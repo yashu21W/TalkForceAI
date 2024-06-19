@@ -1,0 +1,17 @@
+Transcript
+bot: Hi. Thank you for calling Shuttle Fare. My name is Mary. How can I help?
+human:  Looking for lost keys.
+bot: Oh no!
+bot: Losing keys is the worst.
+bot: Were they left in one of our shuttles?
+human:  Maybe.
+bot: Got it.
+bot: Please check the confirmation email you received from us.
+bot: It should have the contact details for your driver or dispatcher.
+bot: They might be able to help you locate your keys.
+bot: Was this for an arrival or a departure?
+human:  Arrival.
+"bot: For arrivals, please check the vendor's confirmation email for the dispatcher's and driver's contact details, as well as airport arrival instructions."
+bot: They should be able to assist you with your lost keys.
+bot: Is there anything else I can help you with?
+human:  No. Thank you.
