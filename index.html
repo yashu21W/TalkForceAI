@@ -24,12 +24,27 @@
 
     <!-- Development css -->
     <link href="assets/css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@23.1.0/build/css/intlTelInput.css">
 
-    <!-- Production css -->
-    <!-- <link rel="stylesheet" href="assets/css/style.min.css"> -->
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-WFF3FMVD');</script>
+    <!-- End Google Tag Manager -->
+
 </head>
 
 <body>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WFF3FMVD" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+
     <div class="page-wrapper relative z-[1] bg-white">
         <!--...::: Header Start :::... -->
         <header class="site-header site-header--absolute is--white py-3" id="sticky-menu">
@@ -37,7 +52,8 @@
                 <div class="flex items-center justify-between gap-x-8">
                     <!-- Header Logo -->
                     <a class href='index.html'>
-                        <img src="assets/img/logo.png" alt="AIMass" width="160" height="55" />
+                        <img loading="lazy" decoding="async" src="assets/img/logo.png" alt="AIMass" width="160"
+                            height="55" />
                     </a>
                     <!-- Header Logo -->
 
@@ -47,8 +63,9 @@
                         <nav class="menu-block" id="append-menu-header">
                             <div class="mobile-menu-head">
                                 <div class="go-back">
-                                    <img class="dropdown-icon" src="assets/img/icon-black-long-arrow-right.svg"
-                                        alt="cheveron-right" width="16" height="16" />
+                                    <img loading="lazy" decoding="async" class="dropdown-icon"
+                                        src="assets/img/icon-black-long-arrow-right.svg" alt="cheveron-right" width="16"
+                                        height="16" />
                                 </div>
                                 <div class="current-menu-title"></div>
                                 <div class="mobile-menu-close">&times;</div>
@@ -81,7 +98,7 @@
                     <div class="flex items-center gap-6">
                         <!-- <a class='hidden border-b-2 border-transparent font-bold text-white transition-all duration-300 hover:border-colorOrangyRed hover:text-colorOrangyRed lg:inline-block'
                             href=''>Contact</a> -->
-                        <a class='button hidden rounded-[50px] border-none bg-colorViolet text-white after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-white lg:inline-block'
+                        <a class='button hidden rounded-[50px] border-none bg-colorViolet text-white after:bg-white hover:text-black lg:inline-block'
                             href='https://cal.com/talkforceai/discoverycall' target="_blank"> Book Discovery Call</a>
                         <!-- Responsive Offcanvas Menu Button -->
                         <div class="block lg:hidden">
@@ -104,61 +121,127 @@
                     class="relative z-[1] overflow-hidden rounded-bl-[30px] rounded-br-[30px] bg-black text-white pb-20 pt-28 lg:rounded-bl-[50px] lg:rounded-br-[50px] lg:pb-24 lg:pt-32 xl:pt-40 xxl:pb-[133px] xxl:pt-[195px]">
                     <!-- Section Container -->
                     <div class="global-container">
-                        <!-- Hero Content -->
-                        <div class="mb-10 flex flex-col items-center text-center lg:mb-10">
-                            <h1
-                                class=" mb-6 max-w-md break-words font-clashDisplay text-4xl font-medium leading-none text-white md:max-w-full md:text-5xl lg:text-6xl xl:text-7xl xxl:text-[70px]">
-                                Reduce Costs & Boost Efficiency: Automate Customer Care with AI
-                            </h1>
-                            <p class=" mb-11 max-w-[700px] sm:text-xl xl:max-w-[980px]">
-                                Enhance customer satisfaction with 24/7 support, reduce operational costs and allow your
-                                team to focus on
-                                delivering exceptional service that sets you apart from the competition.
-                            </p>
-                            <div class=" flex flex-wrap justify-center gap-6" data-_animation="fade">
+
+                        <div class="grid grid-cols-1 items-center gap-14 md:grid-cols-[minmax(0,_1fr)_0.7fr]">
+                            <!-- Hero Content -->
+                            <div>
+                                <h1
+                                    class=" mb-6 max-w-md break-words font-clashDisplay text-4xl font-medium leading-none text-white md:max-w-full md:text-5xl lg:text-6xl xl:text-7xl xxl:text-[70px]">
+                                    Reduce Costs & Boost Efficiency: Automate Customer Care with AI
+                                </h1>
+                                <p class=" mb-11">
+                                    Enhance customer satisfaction with 24/7 support, reduce operational costs and allow
+                                    your
+                                    team to focus on
+                                    delivering exceptional service that sets you apart from the competition.
+                                </p>
                                 <a href="https://cal.com/talkforceai/discoverycall" target="_blank"
-                                    class=" button relative z-[1] inline-flex items-center gap-3 rounded-[50px] border-none bg-colorViolet py-[18px] text-white after:bg-colorOrangyRed hover:text-white">
+                                    class=" button relative z-[1] inline-flex items-center gap-3 rounded-[50px] border-none bg-colorViolet py-[18px] text-white after:bg-black hover:text-white">
                                     Book a Discovery Call
-                                    <img src="assets/img/th-2/icon-white-long-arrow-right.svg"
+                                    <img loading="lazy" decoding="async"
+                                        src="assets/img/th-2/icon-white-long-arrow-right.svg"
                                         alt="icon-white-long-arrow-right" /></a>
-                                <!-- <a href="https://www.example.com/"
-                                    class=" button relative z-[1] inline-flex items-center gap-3 rounded-[50px] border-white bg-transparent py-[18px] text-white after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-white">Start
-                                    Chatting for Free
-                                </a> -->
                             </div>
-                        </div>
-                        <!-- Hero Content -->
-                        <!-- Hero Image -->
-                        <!-- <div style="display: flex; justify-content: center;">
-                            <div class="hero-img  hero-img overflow-hidden rounded-2xl bg-black" data-_animation="zoom"
-                                style="position: relative; z-index: 2;">
-                                <div class="relative overflow-hidden rounded-[20px]">
-                                    <img src="assets/img/th-1/hero-dashboard.jpg" alt="funfact-image"
-                                        class="h-80 w-full object-cover object-center lg:h-[35rem] xl:h-full" />
-                                    <a data-fslightbox="gallery" href="https://www.youtube.com/watch?v=3nQNiWdeH2Q"
-                                        class="absolute left-1/2 top-1/2 z-[1] -translate-x-1/2 -translate-y-1/2">
-                                        <div
-                                            class="relative flex h-[120px] w-[120px] items-center justify-center rounded-full border-[3px] border-black text-lg font-bold backdrop-blur-[2px] transition-all duration-300 hover:bg-[#381FD1] hover:text-white">
-                                            Play
-                                            <div
-                                                class="absolute -z-[1] h-[110%] w-[110%] animate-[ping_1.5s_ease-in-out_infinite] rounded-full bg-gray-600 opacity-30">
-                                            </div>
-                                        </div>
-                                    </a>
+                            <!-- Hero Content -->
+                            <!-- Hero Image -->
+                            <div
+                                class="block rounded-[10px] bg-[#121212] px-[30px] py-[50px] shadow-[0_4px_60px_0_rgba(0,0,0,0.1)] md:order-2">
+                                <h3
+                                    class="mb-4 block text-3xl font-medium leading-[1.33] sm:text-[32px] lg:text-[48px] xl:text-[66px]  text-white">
+                                    Experience TalkForce AI in Action
+                                </h3>
+                                <p class="mb-8 leading-tight">
+                                    Fill in your details below to receive a personalized phone call from our intelligent
+                                    AI agent, Emma.
+                                </p>
+
+                                <div id="emma-thanks" class="bg-black p-[30px] rounded-[10px] hidden">
+                                    <h2
+                                        class="font-clashDisplay text-[22px] font-medium leading-[1.28] lg:text-[28px] text-white text-center">
+                                        Thanks for dialing in! Emma's putting on her headset and will be calling you
+                                        shortly. Please stand by! 😊
+                                    </h2>
                                 </div>
+                                <!-- Contact Form -->
+                                <form id="form" class="flex flex-col gap-y-5 ">
+                                    <!-- Form Group -->
+                                    <div class="grid grid-cols-1 gap-6">
+                                        <!-- Form Single Input -->
+                                        <div class="flex flex-col gap-y-[10px]  py-[15px] rounded-[10px] bg-black">
+                                            <label for="contact-phone"
+                                                class="px-6 text-lg font-bold leading-[1.6]">Enter
+                                                Your Name</label>
+                                            <input type="text" name="Name" id="contact-phone" placeholder="Emma"
+                                                class="rounded-[10px] px-6 py-1 border-gray-300 bg-black text-white outline-none transition-all placeholder:text-slate-500 focus:border-colorOrangyRed"
+                                                required />
+                                        </div>
+                                        <!-- Form Single Input -->
+                                        <div class="flex flex-col gap-y-[10px]  py-[15px] rounded-[10px] bg-black">
+                                            <label for="contact-phone" class="px-6 text-lg font-bold leading-[1.6]">Your
+                                                Email</label>
+                                            <input type="email" name="Email" id="contact-phone"
+                                                placeholder="Emma@talkforceai.com"
+                                                class="rounded-[10px] px-6 py-1 border-gray-300 bg-black text-white outline-none transition-all placeholder:text-slate-500 focus:border-colorOrangyRed"
+                                                required />
+                                        </div>
+                                        <!-- Form Single Input -->
+                                        <div class="flex flex-col gap-y-[10px]  py-[15px] rounded-[10px] bg-black">
+                                            <label for="contact-phone" class="px-6 text-lg font-bold leading-[1.6]">Your
+                                                Phone Number</label>
+                                            <input type="tel" name="Phone" id="phone" placeholder="123-456-7890"
+                                                class="rounded-[10px] px-6 py-1 border-gray-300 bg-black text-white outline-none transition-all placeholder:text-slate-500 focus:border-colorOrangyRed"
+                                                required />
+                                        </div>
+                                        <!-- Form Single Input -->
+                                    </div>
+                                    <div>
+                                        <button id="submit" type="submit"
+                                            class="button mt-5 rounded-[50px] border-none bg-black py-4 text-white after:bg-colorViolet hover:text-white">
+                                            📞 Ring Me, Emma!
+                                        </button>
+                                    </div>
+                                    <!-- Form Group -->
+                                </form>
+                                <!-- Contact Form -->
                             </div>
-                        </div> -->
-                        <!-- Background Gradient -->
-                        <div
-                            class="absolute left-1/2 top-[80%] h-[1280px] w-[1280px] -translate-x-1/2 rounded-full bg-gradient-to-t from-[#5636C7] to-[#5028DD] blur-[250px]">
+                            <!-- Hero Image -->
                         </div>
-                        <!-- <div
-                            class="absolute bottom-0 left-1/2 h-[77px] w-full -translate-x-1/2 bg-[url(../img/th-2/arc-top-shape-1.svg)] bg-cover bg-center bg-no-repeat">
-                        </div> -->
-                        <!-- Section Container -->
                     </div>
-                    <!-- Section Spacer -->
+                    <div
+                        class="absolute left-1/2 top-[80%] h-[1280px] w-[1280px] -translate-x-1/2 rounded-full bg-gradient-to-t from-[#5636C7] to-[#5028DD] blur-[250px]">
+                    </div>
+                </div>
+                <!-- Section Spacer -->
             </section>
+            <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@23.1.0/build/js/intlTelInput.min.js"></script>
+            <script>
+                const form = document.querySelector("#form");
+                const submitButton = document.querySelector("#submit");
+                const thanksDiv = document.getElementById("emma-thanks");
+                const scriptURL = 'https://script.google.com/macros/s/AKfycbyqntRh1fxZvEmotK2T5lMcIaa2roIgkc4sRkyAXpVC3uDku315MvOyEnZQCQKiM4IL/exec';
+
+                form.addEventListener('submit', e => {
+                    e.preventDefault();
+                    submitButton.disabled = true;
+                    submitButton.textContent = "Waking Up Emma 🕒..."; // Change the button text to indicate processing
+                    let requestBody = new FormData(form);
+                    fetch(scriptURL, { method: 'POST', body: requestBody })
+                        .then(response => {
+                            form.style.display = "none";  // Hide the form
+                            thanksDiv.classList.remove("hidden"); // Show the thanks message
+                            submitButton.textContent = "Submitted"; // Optionally change the text to 'Submitted' or similar
+                        })
+                        .catch(error => {
+                            form.style.display = "none";  // Even on error, hide the form
+                            thanksDiv.classList.remove("hidden"); // Show the thanks message
+                            submitButton.textContent = "Try Again"; // Suggest retrying if there was an error
+                            submitButton.disabled = false; // Re-enable the button to allow retry
+                        });
+                });
+
+            </script>
+
+
             <!--...::: Hero Section End :::... -->
 
             <!--...::: Feature Section Start :::... -->
@@ -237,8 +320,9 @@
                                     <li class=" flex flex-col gap-x-[30px] gap-y-6 sm:flex-row" data-_delay="0.1">
                                         <div
                                             class="flex h-20 w-20 items-center justify-center rounded-full bg-white p-4 shadow-[0_4px_60px_0_rgba(0,0,0,0.1)]">
-                                            <img src="assets/img/th-2/icon-feature-3.svg" alt="icon-feature-3"
-                                                width="36" height="45" />
+                                            <img loading="lazy" decoding="async"
+                                                src="assets/img/th-2/icon-feature-3.svg" alt="icon-feature-3" width="36"
+                                                height="45" />
                                         </div>
                                         <div class="flex flex-1 flex-col gap-y-5">
                                             <div
@@ -256,7 +340,8 @@
                                     <li class=" flex flex-col gap-x-[30px] gap-y-6 sm:flex-row" data-_delay="0.2">
                                         <div
                                             class="flex h-20 w-20 items-center justify-center rounded-full bg-white p-4 shadow-[0_4px_60px_0_rgba(0,0,0,0.1)]">
-                                            <img src="assets/img/th-1/icon-black-calendar.svg" alt="icon-feature-2"
+                                            <img loading="lazy" decoding="async"
+                                                src="assets/img/th-1/icon-black-calendar.svg" alt="icon-feature-2"
                                                 width="45" height="45" />
                                         </div>
                                         <div class="flex flex-1 flex-col gap-y-5">
@@ -274,7 +359,8 @@
                                     <li class=" flex flex-col gap-x-[30px] gap-y-6 sm:flex-row" data-_delay="0.3">
                                         <div
                                             class="flex h-20 w-20 items-center justify-center rounded-full bg-white p-4 shadow-[0_4px_60px_0_rgba(0,0,0,0.1)]">
-                                            <img src="assets/img/th-3/icon-black-promo-3.svg" alt="icon-feature-3"
+                                            <img loading="lazy" decoding="async"
+                                                src="assets/img/th-3/icon-black-promo-3.svg" alt="icon-feature-3"
                                                 width="36" height="45" />
                                         </div>
                                         <div class="flex flex-1 flex-col gap-y-5">
@@ -336,7 +422,8 @@
                                 </p>
                                 <div class="audio-p flex mb-3">
                                     <button onclick="togglePlayPause(wavesurfer1, this)">
-                                        <img src="assets/img/audio/play.png" alt="Play" id="playPauseBtn1">
+                                        <img loading="lazy" decoding="async" src="assets/img/audio/play.png" alt="Play"
+                                            id="playPauseBtn1">
                                     </button>
                                     <div id="waveform1" class="waveform"></div>
                                 </div>
@@ -358,7 +445,8 @@
                                 </p>
                                 <div class="audio-p flex mb-3">
                                     <button onclick="togglePlayPause(wavesurfer2, this)">
-                                        <img src="assets/img/audio/play.png" alt="Play" id="playPauseBtn2">
+                                        <img loading="lazy" decoding="async" src="assets/img/audio/play.png" alt="Play"
+                                            id="playPauseBtn2">
                                     </button>
                                     <div id="waveform2" class="waveform"></div>
                                 </div>
@@ -381,7 +469,8 @@
                                 </p>
                                 <div class="audio-p flex mb-3">
                                     <button onclick="togglePlayPause(wavesurfer3, this)">
-                                        <img src="assets/img/audio/play.png" alt="Play" id="playPauseBtn3">
+                                        <img loading="lazy" decoding="async" src="assets/img/audio/play.png" alt="Play"
+                                            id="playPauseBtn3">
                                     </button>
                                     <div id="waveform3" class="waveform"></div>
                                 </div>
@@ -403,7 +492,8 @@
                                 </p>
                                 <div class="audio-p flex mb-3">
                                     <button onclick="togglePlayPause(wavesurfer4, this)">
-                                        <img src="assets/img/audio/play.png" alt="Play" id="playPauseBtn4">
+                                        <img loading="lazy" decoding="async" src="assets/img/audio/play.png" alt="Play"
+                                            id="playPauseBtn4">
                                     </button>
                                     <div id="waveform4" class="waveform"></div>
                                 </div>
@@ -529,7 +619,7 @@
                         <ul class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-2 text-white px-10">
                             <li class=" group rounded-[10px] bg-[#121212]" data-_delay="0.1S">
                                 <div class="relative overflow-hidden rounded-[20px]">
-                                    <img src="assets/img/th-1/content-image-5.jpg" alt="funfact-image "
+                                    <img loading="lazy" decoding="async"    src="assets/img/th-1/content-image-5.jpg" alt="funfact-image "
                                         class=" w-full object-cover object-center lg:h-[35rem] xl:h-full" />
                                     <a data-fslightbox="gallery" href="https://www.youtube.com/watch?v=3nQNiWdeH2Q"
                                         class="absolute left-1/2 top-1/2 z-[1] -translate-x-1/2 -translate-y-1/2">
@@ -545,7 +635,7 @@
                             </li>
                             <li class=" group rounded-[10px] bg-[#121212]" data-_delay="0.1S">
                                 <div class="relative overflow-hidden rounded-[20px]">
-                                    <img src="assets/img/th-1/content-image-6.jpg" alt="funfact-image"
+                                    <img loading="lazy" decoding="async"    src="assets/img/th-1/content-image-6.jpg" alt="funfact-image"
                                         class=" w-full object-cover object-center lg:h-[35rem] xl:h-full" />
                                     <a data-fslightbox="gallery" href="https://www.youtube.com/watch?v=3nQNiWdeH2Q"
                                         class="absolute left-1/2 top-1/2 z-[1] -translate-x-1/2 -translate-y-1/2">
@@ -561,7 +651,7 @@
                             </li>
                             <li class=" group rounded-[10px] bg-[#121212]" data-_delay="0.1S">
                                 <div class="relative overflow-hidden rounded-[20px]">
-                                    <img src="assets/img/th-1/content-image-6.jpg" alt="funfact-image"
+                                    <img loading="lazy" decoding="async"    src="assets/img/th-1/content-image-6.jpg" alt="funfact-image"
                                         class=" w-full object-cover object-center lg:h-[35rem] xl:h-full" />
                                     <a data-fslightbox="gallery" href="https://www.youtube.com/watch?v=3nQNiWdeH2Q"
                                         class="absolute left-1/2 top-1/2 z-[1] -translate-x-1/2 -translate-y-1/2">
@@ -577,7 +667,7 @@
                             </li>
                             <li class=" group rounded-[10px] bg-[#121212]" data-_delay="0.1S">
                                 <div class="relative overflow-hidden rounded-[20px]">
-                                    <img src="assets/img/th-1/content-image-5.jpg" alt="funfact-image"
+                                    <img loading="lazy" decoding="async"    src="assets/img/th-1/content-image-5.jpg" alt="funfact-image"
                                         class=" w-full object-cover object-center lg:h-[35rem] xl:h-full" />
                                     <a data-fslightbox="gallery" href="https://www.youtube.com/watch?v=3nQNiWdeH2Q"
                                         class="absolute left-1/2 top-1/2 z-[1] -translate-x-1/2 -translate-y-1/2">
@@ -657,13 +747,13 @@
                                     </ul>
                                 </div>
                                 <div class="process-img process-ml">
-                                    <img src="assets/img/process-1.jpg" alt="Img">
+                                    <img loading="lazy" decoding="async" src="assets/img/process-1.jpg" alt="Img">
                                 </div>
                             </div>
                             <!-- Service Item -->
                             <div class="process-c flex p-[30px] bg-white progress-bt">
                                 <div class="process-img process-mr process-order">
-                                    <img src="assets/img/process-2.jpg" alt="Img">
+                                    <img loading="lazy" decoding="async" src="assets/img/process-2.jpg" alt="Img">
                                 </div>
                                 <div class="process-text">
                                     <h3 class="font-clashDisplay text-[22px] font-medium leading-[1.28] lg:text-[28px]">
@@ -757,13 +847,13 @@
                                     </ul>
                                 </div>
                                 <div class="process-img process-ml">
-                                    <img src="assets/img/process-3.jpg" alt="Img">
+                                    <img loading="lazy" decoding="async" src="assets/img/process-3.jpg" alt="Img">
                                 </div>
                             </div>
                             <!-- Service List -->
                             <div class="process-c flex p-[30px] bg-white progress-bt">
                                 <div class="process-img process-mr process-order">
-                                    <img src="assets/img/process-4.jpg" alt="Img">
+                                    <img loading="lazy" decoding="async" src="assets/img/process-4.jpg" alt="Img">
                                 </div>
                                 <div class="process-text">
                                     <h3 class="font-clashDisplay text-[22px] font-medium leading-[1.28] lg:text-[28px]">
@@ -836,7 +926,7 @@
                                     </ul>
                                 </div>
                                 <div class="process-img process-ml">
-                                    <img src="assets/img/process-5.jpg" alt="Img">
+                                    <img loading="lazy" decoding="async" src="assets/img/process-5.jpg" alt="Img">
                                 </div>
                             </div>
                             <!-- Service List -->
@@ -857,9 +947,10 @@
 
                                     <div class=" flex flex-wrap justify-center gap-6 mt-5" data-_animation="fade">
                                         <a href="https://cal.com/talkforceai/discoverycall" target="_blank"
-                                            class=" button relative z-[1] inline-flex items-center gap-3 rounded-[50px] border-none bg-black py-[18px] text-white after:bg-colorOrangyRed hover:text-white">
+                                            class=" button relative z-[1] inline-flex items-center gap-3 rounded-[50px] border-none bg-black py-[18px] text-white after:bg-white hover:text-black">
                                             Book a Discovery Call
-                                            <img src="assets/img/th-2/icon-white-long-arrow-right.svg"
+                                            <img loading="lazy" decoding="async"
+                                                src="assets/img/th-2/icon-white-long-arrow-right.svg"
                                                 alt="icon-white-long-arrow-right" /></a>
                                     </div>
                                 </div>
@@ -900,7 +991,8 @@
                                         <div
                                             class="col-span-1 flex flex-col gap-y-8 rounded-[10px] bg-[#121212] p-[30px] text-white transition-all duration-300 hover:bg-[#381FD1]">
                                             <div class="h-10 w-auto xxl:h-[60px]">
-                                                <img src="assets/img/th-3/icon-black-work-process-4.svg"
+                                                <img loading="lazy" decoding="async"
+                                                    src="assets/img/th-3/icon-black-work-process-4.svg"
                                                     alt="working-process-icon" width="65" height="60" class="h-full" />
                                             </div>
                                             <div class="font-raleway text-2xl font-bold leading-[1.33] lg:text-3xl">
@@ -915,7 +1007,8 @@
                                         <div
                                             class="col-span-1 flex flex-col gap-y-8 rounded-[10px] bg-[#121212] p-[30px] text-white transition-all duration-300 hover:bg-[#381FD1]">
                                             <div class="h-10 w-auto xxl:h-[60px]">
-                                                <img src="assets/img/th-3/icon-black-work-process-2.svg"
+                                                <img loading="lazy" decoding="async"
+                                                    src="assets/img/th-3/icon-black-work-process-2.svg"
                                                     alt="working-process-icon" width="60" height="60" class="h-full" />
                                             </div>
                                             <div class="font-raleway text-2xl font-bold leading-[1.33] lg:text-3xl">
@@ -933,7 +1026,8 @@
                                     <div
                                         class="order-2 col-span-1 flex flex-col gap-y-8 rounded-[10px] bg-[#121212] p-[30px] text-white transition-all duration-300 hover:bg-[#381FD1]">
                                         <div class="h-10 w-auto xxl:h-[60px]">
-                                            <img src="assets/img/th-3/icon-black-work-process-3.svg"
+                                            <img loading="lazy" decoding="async"
+                                                src="assets/img/th-3/icon-black-work-process-3.svg"
                                                 alt="working-process-icon" width="60" height="60" class="h-full" />
                                         </div>
                                         <div class="font-raleway text-2xl font-bold leading-[1.33] lg:text-3xl">
@@ -947,7 +1041,8 @@
                                     <div
                                         class="order-1 col-span-1 flex flex-col gap-y-8 rounded-[10px] bg-[#121212] p-[30px] text-white transition-all duration-300 hover:bg-[#381FD1]">
                                         <div class="h-10 w-auto xxl:h-[60px]">
-                                            <img src="assets/img/th-3/icon-black-work-process-5.svg"
+                                            <img loading="lazy" decoding="async"
+                                                src="assets/img/th-3/icon-black-work-process-5.svg"
                                                 alt="working-process-icon" width="40" height="60" class="h-full" />
                                         </div>
                                         <div class="font-raleway text-2xl font-bold leading-[1.33] lg:text-3xl">
@@ -963,7 +1058,8 @@
                                     <div
                                         class="order-3 col-span-1 flex flex-col gap-y-8 rounded-[10px] bg-[#121212] p-[30px] text-white transition-all duration-300 hover:bg-[#381FD1]">
                                         <div class="h-10 w-auto xxl:h-[60px]">
-                                            <img src="assets/img/th-3/icon-black-work-process-1.svg"
+                                            <img loading="lazy" decoding="async"
+                                                src="assets/img/th-3/icon-black-work-process-1.svg"
                                                 alt="working-process-icon" width="62" height="60" class="h-full" />
                                         </div>
                                         <div class="font-raleway text-2xl font-bold leading-[1.33] lg:text-3xl">
@@ -1020,8 +1116,8 @@
                             <!-- Service Item -->
                             <li class="group bg-white p-[30px] transition-all duration-300 ease-in-out ">
                                 <div class="relative mb-9 h-[70px] w-[70px]">
-                                    <img src="assets/img/th-1/service-icon-black-1.svg" alt="Img" width="70"
-                                        height="70" />
+                                    <img loading="lazy" decoding="async" src="assets/img/th-1/service-icon-black-1.svg"
+                                        alt="Img" width="70" height="70" />
                                 </div>
                                 <h3
                                     class="mb-4 block text-xl leading-tight -tracking-[0.5px] xl:text-2xl xxl:text-[28px]">
@@ -1035,8 +1131,8 @@
                             </li>
                             <li class="group bg-white p-[30px] transition-all duration-300 ease-in-out">
                                 <div class="relative mb-9 h-[70px] w-[70px]">
-                                    <img src="assets/img/th-1/service-icon-black-2.svg" alt="Img" width="70"
-                                        height="70" />
+                                    <img loading="lazy" decoding="async" src="assets/img/th-1/service-icon-black-2.svg"
+                                        alt="Img" width="70" height="70" />
                                 </div>
                                 <h3
                                     class="mb-4 block text-xl leading-tight -tracking-[0.5px]  xl:text-2xl xxl:text-[28px]">
@@ -1050,8 +1146,8 @@
                             </li>
                             <li class="group bg-white p-[30px] transition-all duration-300 ease-in-out">
                                 <div class="relative mb-9 h-[70px] w-[70px]">
-                                    <img src="assets/img/th-1/service-icon-black-3.svg" alt="Img" width="70"
-                                        height="70" />
+                                    <img loading="lazy" decoding="async" src="assets/img/th-1/service-icon-black-3.svg"
+                                        alt="Img" width="70" height="70" />
                                 </div>
                                 <h3
                                     class="mb-4 block text-xl leading-tight -tracking-[0.5px]  xl:text-2xl xxl:text-[28px]">
@@ -1065,8 +1161,8 @@
                             </li>
                             <li class="group bg-white p-[30px] transition-all duration-300 ease-in-out">
                                 <div class="relative mb-9 h-[70px] w-[70px]">
-                                    <img src="assets/img/th-1/service-icon-black-4.svg" alt="Img" width="70"
-                                        height="70" />
+                                    <img loading="lazy" decoding="async" src="assets/img/th-1/service-icon-black-4.svg"
+                                        alt="Img" width="70" height="70" />
                                 </div>
                                 <h3
                                     class="mb-4 block text-xl leading-tight -tracking-[0.5px]  xl:text-2xl xxl:text-[28px]">
@@ -1081,8 +1177,8 @@
                             </li>
                             <li class="group bg-white p-[30px] transition-all duration-300 ease-in-out">
                                 <div class="relative mb-9 h-[70px] w-[70px]">
-                                    <img src="assets/img/th-1/service-icon-black-8.svg" alt="Img" width="70"
-                                        height="70" />
+                                    <img loading="lazy" decoding="async" src="assets/img/th-1/service-icon-black-8.svg"
+                                        alt="Img" width="70" height="70" />
                                 </div>
                                 <h3
                                     class="mb-4 block text-xl leading-tight -tracking-[0.5px]  xl:text-2xl xxl:text-[28px]">
@@ -1097,8 +1193,8 @@
                             </li>
                             <li class="group bg-white p-[30px] transition-all duration-300 ease-in-out">
                                 <div class="relative mb-9 h-[70px] w-[70px]">
-                                    <img src="assets/img/th-1/service-icon-black-6.svg" alt="Img" width="70"
-                                        height="70" />
+                                    <img loading="lazy" decoding="async" src="assets/img/th-1/service-icon-black-6.svg"
+                                        alt="Img" width="70" height="70" />
                                 </div>
                                 <h3
                                     class="mb-4 block text-xl leading-tight -tracking-[0.5px]  xl:text-2xl xxl:text-[28px]">
@@ -1127,7 +1223,8 @@
                     <div
                         class=" grid grid-cols-1 overflow-hidden rounded-[20px] bg-black  xl:grid-cols-[minmax(400px,_1fr)_1.5fr] xxl:grid-cols-[1fr_minmax(800px,_1fr)]">
                         <div class="relative overflow-hidden rounded-[20px]">
-                            <img src="assets/img/th-1/funfact-image.jpg" alt="funfact-image" width="721" height="784"
+                            <img loading="lazy" decoding="async" src="assets/img/th-1/funfact-image.jpg"
+                                alt="funfact-image" width="721" height="784"
                                 class="h-80 w-full object-cover object-center lg:h-[35rem] xl:h-full" />
                             <!-- <a data-fslightbox="gallery" href="https://www.youtube.com/watch?v=3nQNiWdeH2Q"
                                 class="absolute left-1/2 top-1/2 z-[1] -translate-x-1/2 -translate-y-1/2">
@@ -1200,8 +1297,8 @@
                                     <!-- Testimonial Item -->
                                     <li class=" flex flex-col gap-y-6 text-white md:gap-y-[30px]" data-_delay="0.1">
                                         <div class="h-auto w-[146px]">
-                                            <img src="assets/img/th-3/review-star.svg" alt="review-star" width="146"
-                                                height="24" />
+                                            <img loading="lazy" decoding="async" src="assets/img/th-3/review-star.svg"
+                                                alt="review-star" width="146" height="24" />
                                         </div>
                                         <p
                                             class="font-raleway text-lg font-bold leading-[1.33] lg:text-xl xl:text-2xl xxl:text-3xl">
@@ -1222,8 +1319,8 @@
                                     <!-- Testimonial Item -->
                                     <li class=" flex flex-col gap-y-6 text-white md:gap-y-[30px]" data-_delay="0.2">
                                         <div class="h-auto w-[146px]">
-                                            <img src="assets/img/th-3/review-star.svg" alt="review-star" width="146"
-                                                height="24" />
+                                            <img loading="lazy" decoding="async" src="assets/img/th-3/review-star.svg"
+                                                alt="review-star" width="146" height="24" />
                                         </div>
                                         <p
                                             class="font-raleway text-lg font-bold leading-[1.33] lg:text-xl xl:text-2xl xxl:text-3xl">
@@ -1306,7 +1403,8 @@
                                             class="accordion-header flex items-center justify-between text-xl leading-[1.2] -tracking-[0.5px] lg:text-[28px]">
                                             <h5>What is TalkForce AI Voice/Call Agent?</h5>
                                             <div class="accordion-icon">
-                                                <img src="assets/img/plus.svg" alt="plus" />
+                                                <img loading="lazy" decoding="async" src="assets/img/plus.svg"
+                                                    alt="plus" />
                                             </div>
                                         </div>
                                         <div class="accordion-content text-[#2C2C2C]">
@@ -1326,7 +1424,8 @@
                                             <h5>What types of businesses can benefit from TalkForce AI Voice/Call
                                                 Agents?</h5>
                                             <div class="accordion-icon">
-                                                <img src="assets/img/plus.svg" alt="plus" />
+                                                <img loading="lazy" decoding="async" src="assets/img/plus.svg"
+                                                    alt="plus" />
                                             </div>
                                         </div>
                                         <div class="accordion-content text-[#2C2C2C]">
@@ -1343,7 +1442,8 @@
                                             class="accordion-header flex items-center justify-between text-xl leading-[1.2] -tracking-[0.5px] lg:text-[28px]">
                                             <h5>Will TalkForce AI Voice/Call Agents replace my human agents?</h5>
                                             <div class="accordion-icon">
-                                                <img src="assets/img/plus.svg" alt="plus" />
+                                                <img loading="lazy" decoding="async" src="assets/img/plus.svg"
+                                                    alt="plus" />
                                             </div>
                                         </div>
                                         <div class="accordion-content text-[#2C2C2C]">
@@ -1367,7 +1467,8 @@
                                             class="accordion-header flex items-center justify-between text-xl leading-[1.2] -tracking-[0.5px] lg:text-[28px]">
                                             <h5>What types of questions can TalkForce AI Voice/Call Agents answer?</h5>
                                             <div class="accordion-icon">
-                                                <img src="assets/img/plus.svg" alt="plus" />
+                                                <img loading="lazy" decoding="async" src="assets/img/plus.svg"
+                                                    alt="plus" />
                                             </div>
                                         </div>
                                         <div class="accordion-content text-[#2C2C2C]">
@@ -1387,7 +1488,8 @@
                                             class="accordion-header flex items-center justify-between text-xl leading-[1.2] -tracking-[0.5px] lg:text-[28px]">
                                             <h5>Can TalkForce AI Voice/Call Agents handle complex inquiries?</h5>
                                             <div class="accordion-icon">
-                                                <img src="assets/img/plus.svg" alt="plus" />
+                                                <img loading="lazy" decoding="async" src="assets/img/plus.svg"
+                                                    alt="plus" />
                                             </div>
                                         </div>
                                         <div class="accordion-content text-[#2C2C2C]">
@@ -1405,7 +1507,8 @@
                                             <h5>Can TalkForce AI Voice/Call Agents understand different accents and
                                                 dialects?</h5>
                                             <div class="accordion-icon">
-                                                <img src="assets/img/plus.svg" alt="plus" />
+                                                <img loading="lazy" decoding="async" src="assets/img/plus.svg"
+                                                    alt="plus" />
                                             </div>
                                         </div>
                                         <div class="accordion-content text-[#2C2C2C]">
@@ -1423,7 +1526,8 @@
                                             <h5>Can TalkForce AI Voice/Call Agents integrate with my existing CRM
                                                 system?</h5>
                                             <div class="accordion-icon">
-                                                <img src="assets/img/plus.svg" alt="plus" />
+                                                <img loading="lazy" decoding="async" src="assets/img/plus.svg"
+                                                    alt="plus" />
                                             </div>
                                         </div>
                                         <div class="accordion-content text-[#2C2C2C]">
@@ -1440,7 +1544,8 @@
                                             <h5>Can TalkForce AI Voice/Call Agents detect customer emotions and respond
                                                 accordingly?</h5>
                                             <div class="accordion-icon">
-                                                <img src="assets/img/plus.svg" alt="plus" />
+                                                <img loading="lazy" decoding="async" src="assets/img/plus.svg"
+                                                    alt="plus" />
                                             </div>
                                         </div>
                                         <div class="accordion-content text-[#2C2C2C]">
@@ -1458,7 +1563,8 @@
                                             class="accordion-header flex items-center justify-between text-xl leading-[1.2] -tracking-[0.5px] lg:text-[28px]">
                                             <h5>Can TalkForce AI Voice/Call Agents be used for outbound calls?</h5>
                                             <div class="accordion-icon">
-                                                <img src="assets/img/plus.svg" alt="plus" />
+                                                <img loading="lazy" decoding="async" src="assets/img/plus.svg"
+                                                    alt="plus" />
                                             </div>
                                         </div>
                                         <div class="accordion-content text-[#2C2C2C]">
@@ -1477,7 +1583,8 @@
                                             <h5>How does TalkForce AI ensure its AI Voice/Call Agents stay up-to-date
                                                 and improve over time?</h5>
                                             <div class="accordion-icon">
-                                                <img src="assets/img/plus.svg" alt="plus" />
+                                                <img loading="lazy" decoding="async" src="assets/img/plus.svg"
+                                                    alt="plus" />
                                             </div>
                                         </div>
                                         <div class="accordion-content text-[#2C2C2C]">
@@ -1498,7 +1605,8 @@
                                             class="accordion-header flex items-center justify-between text-xl leading-[1.2] -tracking-[0.5px] lg:text-[28px]">
                                             <h5>How much does it cost to hire a TalkForce AI Voice/Call Agent?</h5>
                                             <div class="accordion-icon">
-                                                <img src="assets/img/plus.svg" alt="plus" />
+                                                <img loading="lazy" decoding="async" src="assets/img/plus.svg"
+                                                    alt="plus" />
                                             </div>
                                         </div>
                                         <div class="accordion-content text-[#2C2C2C]">
@@ -1516,7 +1624,8 @@
                                             class="accordion-header flex items-center justify-between text-xl leading-[1.2] -tracking-[0.5px] lg:text-[28px]">
                                             <h5>How long does it take to implement a TalkForce AI Voice/Call Agent?</h5>
                                             <div class="accordion-icon">
-                                                <img src="assets/img/plus.svg" alt="plus" />
+                                                <img loading="lazy" decoding="async" src="assets/img/plus.svg"
+                                                    alt="plus" />
                                             </div>
                                         </div>
                                         <div class="accordion-content text-[#2C2C2C]">
@@ -1534,7 +1643,8 @@
                                             <h5>Do I need any special IT skills to use TalkForce AI Voice/Call Agents?
                                             </h5>
                                             <div class="accordion-icon">
-                                                <img src="assets/img/plus.svg" alt="plus" />
+                                                <img loading="lazy" decoding="async" src="assets/img/plus.svg"
+                                                    alt="plus" />
                                             </div>
                                         </div>
                                         <div class="accordion-content text-[#2C2C2C]">
@@ -1557,7 +1667,8 @@
                                             class="accordion-header flex items-center justify-between text-xl leading-[1.2] -tracking-[0.5px] lg:text-[28px]">
                                             <h5>What are the benefits of using TalkForce AI Voice/Call Agents?</h5>
                                             <div class="accordion-icon">
-                                                <img src="assets/img/plus.svg" alt="plus" />
+                                                <img loading="lazy" decoding="async" src="assets/img/plus.svg"
+                                                    alt="plus" />
                                             </div>
                                         </div>
                                         <div class="accordion-content text-[#2C2C2C]">
@@ -1582,7 +1693,8 @@
                                             class="accordion-header flex items-center justify-between text-xl leading-[1.2] -tracking-[0.5px] lg:text-[28px]">
                                             <h5>How can I measure the ROI of TalkForce AI Voice/Call Agents?</h5>
                                             <div class="accordion-icon">
-                                                <img src="assets/img/plus.svg" alt="plus" />
+                                                <img loading="lazy" decoding="async" src="assets/img/plus.svg"
+                                                    alt="plus" />
                                             </div>
                                         </div>
                                         <div class="accordion-content text-[#2C2C2C]">
@@ -1605,7 +1717,8 @@
                                             <h5>How can I ensure a smooth transition to using TalkForce AI Voice/Call
                                                 Agents?</h5>
                                             <div class="accordion-icon">
-                                                <img src="assets/img/plus.svg" alt="plus" />
+                                                <img loading="lazy" decoding="async" src="assets/img/plus.svg"
+                                                    alt="plus" />
                                             </div>
                                         </div>
                                         <div class="accordion-content text-[#2C2C2C]">
@@ -1661,7 +1774,7 @@
                                 data-_delay="0.1">
                                 <a class='block h-[320px] w-full overflow-hidden rounded-[30px]'
                                     href='blog-details.html'>
-                                    <img src="assets/img/th-1/blog-main-1.jpg" alt="blog-main-1" width="416"
+                                    <img loading="lazy" decoding="async"    src="assets/img/th-1/blog-main-1.jpg" alt="blog-main-1" width="416"
                                         height="320"
                                         class="h-full w-full scale-100 object-cover transition-all duration-300 group-hover:scale-105" />
                                 </a>
@@ -1674,7 +1787,7 @@
                                     <div class="flex items-center justify-between gap-x-4">
                                         <span>23 June 2024</span>
                                         <a class='h-[30px] w-[30px]' href='blog-details.html'>
-                                            <img src="assets/img/th-2/icon-blue-long-arrow-right.svg"
+                                            <img loading="lazy" decoding="async"    src="assets/img/th-2/icon-blue-long-arrow-right.svg"
                                                 alt="icon-blue-long-arrow-right" width="30" height="30"
                                                 class="transition-all duration-300 group-hover:-rotate-45" />
                                         </a>
@@ -1686,7 +1799,7 @@
                                 data-_delay="0.2">
                                 <a class='block h-[320px] w-full overflow-hidden rounded-[30px]'
                                     href='blog-details.html'>
-                                    <img src="assets/img/th-1/blog-main-2.jpg" alt="blog-main-2" width="416"
+                                    <img loading="lazy" decoding="async"    src="assets/img/th-1/blog-main-2.jpg" alt="blog-main-2" width="416"
                                         height="320"
                                         class="h-full w-full scale-100 object-cover transition-all duration-300 group-hover:scale-105" />
                                 </a>
@@ -1699,7 +1812,7 @@
                                     <div class="flex items-center justify-between gap-x-4">
                                         <span>20 June 2024</span>
                                         <a class='h-[30px] w-[30px]' href='blog-details.html'>
-                                            <img src="assets/img/th-2/icon-blue-long-arrow-right.svg"
+                                            <img loading="lazy" decoding="async"    src="assets/img/th-2/icon-blue-long-arrow-right.svg"
                                                 alt="icon-blue-long-arrow-right" width="30" height="30"
                                                 class="transition-all duration-300 group-hover:-rotate-45" />
                                         </a>
@@ -1711,7 +1824,7 @@
                                 data-_delay="0.3">
                                 <a class='block h-[320px] w-full overflow-hidden rounded-[30px]'
                                     href='blog-details.html'>
-                                    <img src="assets/img/th-1/blog-main-3.jpg" alt="blog-main-3" width="416"
+                                    <img loading="lazy" decoding="async"    src="assets/img/th-1/blog-main-3.jpg" alt="blog-main-3" width="416"
                                         height="320"
                                         class="h-full w-full scale-100 object-cover transition-all duration-300 group-hover:scale-105" />
                                 </a>
@@ -1724,7 +1837,7 @@
                                     <div class="flex items-center justify-between gap-x-4">
                                         <span>18 June 2024</span>
                                         <a class='h-[30px] w-[30px]' href='blog-details.html'>
-                                            <img src="assets/img/th-2/icon-blue-long-arrow-right.svg"
+                                            <img loading="lazy" decoding="async"    src="assets/img/th-2/icon-blue-long-arrow-right.svg"
                                                 alt="icon-blue-long-arrow-right" width="30" height="30"
                                                 class="transition-all duration-300 group-hover:-rotate-45" />
                                         </a>
@@ -1743,9 +1856,7 @@
         <!--...::: Footer-2 Section Start :::... -->
         <footer id="footer-2"
             class="relative z-[1] -mt-[70px] overflow-hidden rounded-tl-[30px] rounded-tr-[30px] bg-colorLinenRuffle lg:rounded-tl-[50px] lg:rounded-tr-[50px]">
-            <!-- <div
-     class="absolute -top-[77px] left-1/2 z-10 h-[77px] w-full -translate-x-1/2 bg-[url(../img/th-2/arc-bottom-shape-1.svg)] bg-cover bg-center bg-no-repeat">
- </div> -->
+
             <div class="relative z-[1] overflow-hidden bg-black text-white">
                 <!-- Section Container -->
                 <div class="pb-10 pt-20">
@@ -1774,19 +1885,20 @@
                                     <button type="submit"
                                         class="absolute right-[5px] top-[50%] inline-flex h-[50px] -translate-y-[50%] items-center gap-x-[10px] rounded-[50px] bg-colorViolet px-6 transition-all duration-300 hover:bg-colorOrangyRed">
                                         <span class="hidden sm:inline-block">Get Started</span>
-                                        <img src="assets/img/th-1/arrow-right-large.svg" alt="newsletter" />
+                                        <img loading="lazy" decoding="async"    src="assets/img/th-1/arrow-right-large.svg" alt="newsletter" />
                                     </button>
                                 </div>
                             </form> -->
 
                             <div class=" flex flex-wrap justify-center gap-6" data-_animation="fade">
                                 <a href="https://cal.com/talkforceai/discoverycall" target="_blank"
-                                    class=" button relative z-[1] inline-flex items-center gap-3 rounded-[50px] border-none bg-colorViolet py-[18px] text-white after:bg-colorOrangyRed hover:text-white">
+                                    class=" button relative z-[1] inline-flex items-center gap-3 rounded-[50px] border-none bg-colorViolet py-[18px] text-white after:bg-black hover:text-white">
                                     Book a Discovery Call
-                                    <img src="assets/img/th-2/icon-white-long-arrow-right.svg"
+                                    <img loading="lazy" decoding="async"
+                                        src="assets/img/th-2/icon-white-long-arrow-right.svg"
                                         alt="icon-white-long-arrow-right" /></a>
                                 <a href="contact.html"
-                                    class=" button relative z-[1] inline-flex items-center gap-3 rounded-[50px] border-white bg-transparent py-[18px] text-white after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-white">
+                                    class=" button relative z-[1] inline-flex items-center gap-3 rounded-[50px] border-white bg-transparent py-[18px] text-white after:bg-white hover:text-black">
                                     Contact Us
                                 </a>
                             </div>
@@ -1814,10 +1926,12 @@
                             <div
                                 class="flex flex-wrap items-center justify-center gap-5 text-center md:justify-between md:text-left">
                                 <a href='index.html'>
-                                    <img src="assets/img/logo.png" alt="logo-light" width="175" height="23" />
+                                    <img loading="lazy" decoding="async" src="assets/img/logo.png" alt="logo-light"
+                                        width="175" height="23" />
                                 </a>
 
-                                <p>&copy; Copyright 2024, All Rights Reserved by TalkForce AI</p>
+                                <p>&copy; Copyright 2024, All Rights Reserved by TalkForce AI | <a target="_blank"
+                                        href="https://scaleify.agency/"><em>Website By Scaleify</em></a></p>
                             </div>
                         </div>
                     </div>
