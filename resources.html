@@ -322,18 +322,19 @@
                                     <p class="mb-10 leading-tight">
                                         Fill in your details below to receive a personalized phone call from our
                                         intelligent
-                                        AI agent, Emma.
+                                        AI agent, Juila.
                                     </p>
 
-                                    <div id="emma-thanks" class="bg-black p-[30px] rounded-[10px] hidden">
+                                    <div id="Juila-thanks" class="bg-black p-[30px] rounded-[10px] hidden">
                                         <h2
                                             class="font-clashDisplay text-[22px] font-medium leading-[1.28] lg:text-[28px] text-white text-center">
-                                            Thanks for dialing in! Emma's putting on her headset and will be calling you
+                                            Thanks for dialing in! Juila's putting on her headset and will be calling
+                                            you
                                             shortly. Please stand by! 😊
                                         </h2>
                                     </div>
                                     <!-- Contact Form -->
-                                    <form id="emmaForm" class="flex flex-col gap-y-5 ">
+                                    <form id="JuilaForm" class="flex flex-col gap-y-5 ">
                                         <!-- Form Group -->
                                         <div class="grid grid-cols-1 gap-6">
                                             <!-- Form Single Input -->
@@ -341,7 +342,7 @@
                                                 <label for="contact-phone"
                                                     class="px-6 text-lg font-bold leading-[1.6]">Enter
                                                     Your Name</label>
-                                                <input type="text" name="Name" id="contact-phone" placeholder="Emma"
+                                                <input type="text" name="Name" id="contact-phone" placeholder="Juila"
                                                     class="rounded-[10px] px-6 py-1 border-gray-300 bg-black text-white outline-none transition-all placeholder:text-slate-500 focus:border-colorOrangyRed"
                                                     required />
                                             </div>
@@ -351,7 +352,7 @@
                                                     class="px-6 text-lg font-bold leading-[1.6]">Your
                                                     Email</label>
                                                 <input type="email" name="Email" id="contact-phone"
-                                                    placeholder="Emma@talkforceai.com"
+                                                    placeholder="Juila@talkforceai.com"
                                                     class="rounded-[10px] px-6 py-1 border-gray-300 bg-black text-white outline-none transition-all placeholder:text-slate-500 focus:border-colorOrangyRed"
                                                     required />
                                             </div>
@@ -368,9 +369,9 @@
                                             <!-- Form Single Input -->
                                         </div>
                                         <div>
-                                            <button id="emmaSubmit" type="submit"
+                                            <button id="JuilaSubmit" type="submit"
                                                 class="button mt-5 rounded-[50px] border-none bg-black py-4 text-white after:bg-colorViolet hover:text-white">
-                                                📞 Ring Me, Emma!
+                                                📞 Ring Me, Juila!
                                             </button>
                                         </div>
                                         <!-- Form Group -->
@@ -512,27 +513,27 @@
 
             <script>
 
-                const emmaForm = document.querySelector("#emmaForm");
-                const emmaSubmitButton = document.querySelector("#emmaSubmit");
-                const emmaThanksDiv = document.getElementById("emma-thanks");
-                const emmaScriptURL = 'https://script.google.com/macros/s/AKfycbyqntRh1fxZvEmotK2T5lMcIaa2roIgkc4sRkyAXpVC3uDku315MvOyEnZQCQKiM4IL/exec';
+                const JuilaForm = document.querySelector("#JuilaForm");
+                const JuilaSubmitButton = document.querySelector("#JuilaSubmit");
+                const JuilaThanksDiv = document.getElementById("Juila-thanks");
+                const JuilaScriptURL = 'https://script.google.com/macros/s/AKfycbyqntRh1fxZvEmotK2T5lMcIaa2roIgkc4sRkyAXpVC3uDku315MvOyEnZQCQKiM4IL/exec';
 
-                emmaForm.addEventListener('submit', e => {
+                JuilaForm.addEventListener('submit', e => {
                     e.preventDefault();
-                    emmaSubmitButton.disabled = true;
-                    emmaSubmitButton.textContent = "Waking Up Emma 🕒..."; // Change the button text to indicate processing
-                    let requestBody = new FormData(emmaForm);
-                    fetch(emmaScriptURL, { method: 'POST', body: requestBody })
+                    JuilaSubmitButton.disabled = true;
+                    JuilaSubmitButton.textContent = "Waking Up Juila 🕒..."; // Change the button text to indicate processing
+                    let requestBody = new FormData(JuilaForm);
+                    fetch(JuilaScriptURL, { method: 'POST', body: requestBody })
                         .then(response => {
-                            emmaForm.style.display = "none";  // Hide the form
-                            emmaThanksDiv.classList.remove("hidden"); // Show the thanks message
-                            emmaSubmitButton.textContent = "Submitted"; // Optionally change the text to 'Submitted' or similar
+                            JuilaForm.style.display = "none";  // Hide the form
+                            JuilaThanksDiv.classList.remove("hidden"); // Show the thanks message
+                            JuilaSubmitButton.textContent = "Submitted"; // Optionally change the text to 'Submitted' or similar
                         })
                         .catch(error => {
-                            emmaForm.style.display = "none";  // Even on error, hide the form
-                            emmaThanksDiv.classList.remove("hidden"); // Show the thanks message
-                            emmaSubmitButton.textContent = "Try Again"; // Suggest retrying if there was an error
-                            emmaSubmitButton.disabled = false; // Re-enable the button to allow retry
+                            JuilaForm.style.display = "none";  // Even on error, hide the form
+                            JuilaThanksDiv.classList.remove("hidden"); // Show the thanks message
+                            JuilaSubmitButton.textContent = "Try Again"; // Suggest retrying if there was an error
+                            JuilaSubmitButton.disabled = false; // Re-enable the button to allow retry
                         });
                 });
 
