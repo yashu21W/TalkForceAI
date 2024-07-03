@@ -124,8 +124,7 @@
                 <div class="pb-40 xl:pb-[200px]">
                     <!-- Section Container -->
                     <div class="global-container">
-                        <div
-                            class="calculator-des-container">
+                        <div class="calculator-des-container">
 
                             <!-- Contact Right Block -->
                             <div
@@ -134,8 +133,15 @@
 
                                 <div id="form-thanks" class="flex hidden" style="align-items: center; height: 100%;">
                                     <h2 class="text-[22px] font-medium leading-[1.28] lg:text-[28px] text-center ">
-                                        Result
+                                        After implementing TalkForce AI, your monthly AI cost is <u>$<span
+                                                id="monthly-ai-cost"></span></u>, you gain an
+                                        additional monthly revenue of <u>$<span
+                                                id="additional-monthly-revenue"></span></u>, resulting in a monthly ROI
+                                        of
+                                        <u><span id="monthly-roi"></span>%</u> and an annual ROI of <u><span
+                                                id="annual-roi"></span>%</u>.
                                     </h2>
+
                                 </div>
 
                                 <form id="form" class="flex flex-col gap-y-5 ">
@@ -205,7 +211,8 @@
                                     <div class="grid grid-cols-1 gap-6 xl:grid-cols-2">
                                         <!-- Form Single Input -->
                                         <div class="flex flex-col gap-y-[10px]">
-                                            <label for="monthly-leads" class="text-lg font-bold leading-[1.6]">Monthly Leads</label>
+                                            <label for="monthly-leads" class="text-lg font-bold leading-[1.6]">Monthly
+                                                Leads</label>
                                             <input type="number" name="Monthly Leads" id="monthly-leads" placeholder=""
                                                 class="rounded-[10px] border border-gray-300 bg-white px-6 py-[18px] text-black outline-none transition-all placeholder:text-slate-500 focus:border-colorOrangyRed"
                                                 required />
@@ -213,8 +220,11 @@
                                         <!-- Form Single Input -->
                                         <!-- Form Single Input -->
                                         <div class="flex flex-col gap-y-[10px]">
-                                            <label for="current-conversion-rate" class="text-lg font-bold leading-[1.6]">Current Conversion Rate (%)</label>
-                                            <input type="number" name="Current Conversion Rate"id="current-conversion-rate" placeholder=""
+                                            <label for="current-conversion-rate"
+                                                class="text-lg font-bold leading-[1.6]">Current Conversion Rate
+                                                (%)</label>
+                                            <input type="number" name="Current Conversion Rate"
+                                                id="current-conversion-rate" placeholder=""
                                                 class="rounded-[10px] border border-gray-300 bg-white px-6 py-[18px] text-black outline-none transition-all placeholder:text-slate-500 focus:border-colorOrangyRed"
                                                 required />
                                         </div>
@@ -225,8 +235,10 @@
                                     <div class="grid grid-cols-1 gap-6 xl:grid-cols-2">
                                         <!-- Form Single Input -->
                                         <div class="flex flex-col gap-y-[10px]">
-                                            <label for="naverage-sale-value" class="text-lg font-bold leading-[1.6]">Average Sale Value ($)</label>
-                                            <input type="number" name="Average Sale Value" id="average-sale-value" placeholder=""
+                                            <label for="naverage-sale-value"
+                                                class="text-lg font-bold leading-[1.6]">Average Sale Value ($)</label>
+                                            <input type="number" name="Average Sale Value" id="average-sale-value"
+                                                placeholder=""
                                                 class="rounded-[10px] border border-gray-300 bg-white px-6 py-[18px] text-black outline-none transition-all placeholder:text-slate-500 focus:border-colorOrangyRed"
                                                 required />
                                         </div>
@@ -234,21 +246,25 @@
                                         <!-- Form Single Input -->
                                         <div class="flex flex-col gap-y-[10px]">
                                             <label for="human-hourly-rate"
-                                                class="text-lg font-bold leading-[1.6]">Customer Lifetime Value (LTV) ($)</label>
-                                            <input type="number" name="Customer Lifetime Value" id="customer-ltv" placeholder=""
+                                                class="text-lg font-bold leading-[1.6]">Customer Lifetime Value (LTV)
+                                                ($)</label>
+                                            <input type="number" name="Customer Lifetime Value" id="customer-ltv"
+                                                placeholder=""
                                                 class="rounded-[10px] border border-gray-300 bg-white px-6 py-[18px] text-black outline-none transition-all placeholder:text-slate-500 focus:border-colorOrangyRed"
                                                 required />
                                         </div>
                                         <!-- Form Single Input -->
                                         <div class="flex flex-col gap-y-[10px]">
                                             <label for="average-call-duration"
-                                                class="text-lg font-bold leading-[1.6]">Average Call Duration (minutes)</label>
-                                            <input type="number" name="Average Call Duration" id="average-call-duration" placeholder=""
+                                                class="text-lg font-bold leading-[1.6]">Average Call Duration
+                                                (minutes)</label>
+                                            <input type="number" name="Average Call Duration" id="average-call-duration"
+                                                placeholder=""
                                                 class="rounded-[10px] border border-gray-300 bg-white px-6 py-[18px] text-black outline-none transition-all placeholder:text-slate-500 focus:border-colorOrangyRed"
                                                 required />
                                         </div>
                                     </div>
-                                
+
                                     <div>
                                         <button id="submit" type="submit"
                                             class="button mt-5 rounded-[50px] bg-black py-4 text-white after:bg-colorViolet hover:border-colorViolet hover:text-white">
@@ -277,11 +293,52 @@
                 form.addEventListener('submit', e => {
                     e.preventDefault();
                     submitButton.disabled = true;
-                    submitButton.textContent = "Calculating! ⚙️ "; // Change the button text to indicate processing
+                    submitButton.textContent = "Calculating!... ⚙️"; // Change the button text to indicate processing
+
+                    // Get the form values
+                    const monthlyLeads = parseFloat(document.getElementById('monthly-leads').value);
+                    const currentConversionRate = parseFloat(document.getElementById('current-conversion-rate').value) / 100; // Convert percentage to decimal
+                    const averageSaleValue = parseFloat(document.getElementById('average-sale-value').value);
+                    const customerLTV = parseFloat(document.getElementById('customer-ltv').value);
+                    const averageCallDuration = parseFloat(document.getElementById('average-call-duration').value);
+
+                    // Define fixed AI cost and conversion rate increase
+                    const aiCostPerMinute = 0.25;
+                    const conversionRateIncrease = 0.20; // 20% increase
+
+                    // Calculate monthly AI cost
+                    const monthlyAICost = monthlyLeads * averageCallDuration * aiCostPerMinute;
+
+                    // Calculate current and new monthly sales
+                    const currentMonthlySales = monthlyLeads * currentConversionRate;
+                    const newConversionRate = currentConversionRate * (1 + conversionRateIncrease);
+                    const newMonthlySales = monthlyLeads * newConversionRate;
+
+                    // Calculate additional monthly sales and revenue
+                    const additionalMonthlySales = newMonthlySales - currentMonthlySales;
+                    const additionalMonthlyRevenue = additionalMonthlySales * averageSaleValue;
+                    const additionalMonthlyLTVRevenue = additionalMonthlySales * customerLTV;
+
+                    // Calculate ROI
+                    const monthlyROI = ((additionalMonthlyLTVRevenue - monthlyAICost) / monthlyAICost) * 100;
+                    const annualROI = monthlyROI * 12;
+
+                    // Display the results
+                    document.getElementById("monthly-ai-cost").textContent = monthlyAICost.toFixed(2);
+                    document.getElementById("additional-monthly-revenue").textContent = additionalMonthlyRevenue.toFixed(2);
+                    document.getElementById("monthly-roi").textContent = monthlyROI.toFixed(2);
+                    document.getElementById("annual-roi").textContent = annualROI.toFixed(2);
+
+                    // Submit the form data to Google Sheets
                     let requestBody = new FormData(form);
+                    requestBody.append('Monthly AI Cost', monthlyAICost.toFixed(2));
+                    requestBody.append('Additional Monthly Revenue', additionalMonthlyRevenue.toFixed(2));
+                    requestBody.append('Monthly ROI', monthlyROI.toFixed(2));
+                    requestBody.append('Annual ROI', annualROI.toFixed(2));
+
                     fetch(scriptURL, { method: 'POST', body: requestBody })
                         .then(response => {
-                            form.classList.add("hidden"); // Hide the form directly
+                            form.classList.add("hidden"); // Hide the form
                             thanksDiv.classList.remove("hidden"); // Show the thanks message
                             submitButton.textContent = "Sent!"; // Optionally change the button text after successful submission
                         })
@@ -290,6 +347,7 @@
                             submitButton.disabled = false; // Re-enable the button for possible re-submission
                         });
                 });
+
             </script>
 
 
