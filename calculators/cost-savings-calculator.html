@@ -124,22 +124,23 @@
                 <div class="pb-40 xl:pb-[200px]">
                     <!-- Section Container -->
                     <div class="global-container">
-                        <div
-                            class="calculator-des-container">
-
+                        <div class="calculator-des-container">
                             <!-- Contact Right Block -->
                             <div
-                                class=" block rounded-lg bg-white px-[30px] py-[50px] shadow-[0_4px_60px_0_rgba(0,0,0,0.1)]">
+                                class="block rounded-lg bg-white px-[30px] py-[50px] shadow-[0_4px_60px_0_rgba(0,0,0,0.1)]">
                                 <!-- Contact Form -->
-
                                 <div id="form-thanks" class="flex hidden" style="align-items: center; height: 100%;">
                                     <h2 class="text-[22px] font-medium leading-[1.28] lg:text-[28px] text-center ">
-                                        Thanks for reaching out! Your message is important to us, and we’re on it.
-                                        You’ll hear from us shortly. ⏳
+                                        After implementing TalkForce AI
+                                        your weekly savings are <u>$<span id="weekly-savings"></span></u>, and your
+                                        annual
+                                        savings are <u>$<span id="annual-savings"></span></u>. Additionally, the number
+                                        of
+                                        human representatives needed is reduced to <u><span
+                                                id="reduced-reps"></span></u>.
                                     </h2>
                                 </div>
-
-                                <form id="form" class="flex flex-col gap-y-5 ">
+                                <form id="form" class="flex flex-col gap-y-5">
                                     <!-- Form Group -->
                                     <div class="grid grid-cols-1 gap-6 xl:grid-cols-2">
                                         <!-- Form Single Input -->
@@ -206,7 +207,8 @@
                                     <div class="grid grid-cols-1 gap-6 xl:grid-cols-2">
                                         <!-- Form Single Input -->
                                         <div class="flex flex-col gap-y-[10px]">
-                                            <label for="hours-per-day" class="text-lg font-bold leading-[1.6]">Working Hours Per Day</label>
+                                            <label for="hours-per-day" class="text-lg font-bold leading-[1.6]">Working
+                                                Hours Per Day</label>
                                             <input type="number" name="Hours Per Day" id="hours-per-day" placeholder=""
                                                 class="rounded-[10px] border border-gray-300 bg-white px-6 py-[18px] text-black outline-none transition-all placeholder:text-slate-500 focus:border-colorOrangyRed"
                                                 required />
@@ -214,7 +216,8 @@
                                         <!-- Form Single Input -->
                                         <!-- Form Single Input -->
                                         <div class="flex flex-col gap-y-[10px]">
-                                            <label for="days-per-week" class="text-lg font-bold leading-[1.6]">Working Days Per Week</label>
+                                            <label for="days-per-week" class="text-lg font-bold leading-[1.6]">Working
+                                                Days Per Week</label>
                                             <input type="number" name="Days Per Week" id="days-per-week" placeholder=""
                                                 class="rounded-[10px] border border-gray-300 bg-white px-6 py-[18px] text-black outline-none transition-all placeholder:text-slate-500 focus:border-colorOrangyRed"
                                                 required />
@@ -226,27 +229,30 @@
                                     <div class="grid grid-cols-1 gap-6 xl:grid-cols-2">
                                         <!-- Form Single Input -->
                                         <div class="flex flex-col gap-y-[10px]">
-                                            <label for="num-reps" class="text-lg font-bold leading-[1.6]">Number of Representatives</label>
-                                            <input type="number" name="Number of Representatives" id="num-reps-" placeholder=""
+                                            <label for="num-reps" class="text-lg font-bold leading-[1.6]">Number of
+                                                Representatives</label>
+                                            <input type="number" name="Number of Representatives" id="num-reps"
+                                                placeholder=""
                                                 class="rounded-[10px] border border-gray-300 bg-white px-6 py-[18px] text-black outline-none transition-all placeholder:text-slate-500 focus:border-colorOrangyRed"
                                                 required />
                                         </div>
                                         <!-- Form Single Input -->
                                         <!-- Form Single Input -->
                                         <div class="flex flex-col gap-y-[10px]">
-                                            <label for="human-hourly-rate"
-                                                class="text-lg font-bold leading-[1.6]">Human Hourly Rate ($)</label>
-                                            <input type="number" name="Human Hourly Rate ($)" id="human-hourly-rate" placeholder=""
+                                            <label for="human-hourly-rate" class="text-lg font-bold leading-[1.6]">Human
+                                                Hourly Rate ($)</label>
+                                            <input type="number" name="Human Hourly Rate ($)" id="human-hourly-rate"
+                                                placeholder=""
                                                 class="rounded-[10px] border border-gray-300 bg-white px-6 py-[18px] text-black outline-none transition-all placeholder:text-slate-500 focus:border-colorOrangyRed"
                                                 required />
                                         </div>
                                         <!-- Form Single Input -->
                                     </div>
-                                
+
                                     <div>
                                         <button id="submit" type="submit"
                                             class="button mt-5 rounded-[50px] bg-black py-4 text-white after:bg-colorViolet hover:border-colorViolet hover:text-white">
-                                           Calculate Savings! 💰
+                                            Calculate Savings! 💰
                                         </button>
                                     </div>
                                     <!-- Form Group -->
@@ -271,11 +277,50 @@
                 form.addEventListener('submit', e => {
                     e.preventDefault();
                     submitButton.disabled = true;
-                    submitButton.textContent = "Calculating! ⚙️ "; // Change the button text to indicate processing
+                    submitButton.textContent = "Calculating!... ⚙️"; // Change the button text to indicate processing
+
+                    // Get the form values
+                    const hoursPerDay = parseFloat(document.getElementById('hours-per-day').value);
+                    const daysPerWeek = parseFloat(document.getElementById('days-per-week').value);
+                    const numReps = parseFloat(document.getElementById('num-reps').value);
+                    const humanHourlyRate = parseFloat(document.getElementById('human-hourly-rate').value);
+
+                    // Define fixed AI cost and efficiency rate
+                    const aiCostPerMinute = 0.25;
+                    const aiEfficiencyRate = 0.60;
+
+                    // Calculate current human weekly cost
+                    const totalWeeklyHours = hoursPerDay * daysPerWeek;
+                    const currentHumanWeeklyCost = humanHourlyRate * totalWeeklyHours * numReps;
+
+                    // Calculate reduced human weekly cost
+                    const reducedNumReps = numReps * (1 - aiEfficiencyRate);
+                    const reducedHumanWeeklyCost = humanHourlyRate * totalWeeklyHours * Math.round(reducedNumReps);
+
+                    // Calculate AI weekly cost
+                    const aiWeeklyCost = aiCostPerMinute * 60 * totalWeeklyHours;
+
+                    // Calculate new weekly cost
+                    const newWeeklyCost = reducedHumanWeeklyCost + aiWeeklyCost;
+
+                    // Calculate savings
+                    const weeklySavings = currentHumanWeeklyCost - newWeeklyCost;
+                    const annualSavings = weeklySavings * 52;
+
+                    // Display the results
+                    document.getElementById("weekly-savings").textContent = `${weeklySavings.toFixed(2)}`;
+                    document.getElementById("annual-savings").textContent = `${annualSavings.toFixed(2)}`;
+                    document.getElementById("reduced-reps").textContent = Math.round(reducedNumReps);
+
+                    // Submit the form data to Google Sheets
                     let requestBody = new FormData(form);
+                    requestBody.append('Weekly Savings', weeklySavings.toFixed(2));
+                    requestBody.append('Annual Savings', annualSavings.toFixed(2));
+                    requestBody.append('Reduced Representatives', Math.round(reducedNumReps));
+
                     fetch(scriptURL, { method: 'POST', body: requestBody })
                         .then(response => {
-                            form.classList.add("hidden"); // Hide the form directly
+                            form.classList.add("hidden"); // Hide the form
                             thanksDiv.classList.remove("hidden"); // Show the thanks message
                             submitButton.textContent = "Sent!"; // Optionally change the button text after successful submission
                         })
@@ -284,8 +329,9 @@
                             submitButton.disabled = false; // Re-enable the button for possible re-submission
                         });
                 });
-            </script>
 
+
+            </script>
 
 
         </main>
