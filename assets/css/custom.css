@@ -19,6 +19,11 @@ body::-webkit-scrollbar-thumb {
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
   }
+
+  .calculator-des-container{
+    width: 75%;
+    margin: auto;
+  }
 }
 
 #sticky-menu {
