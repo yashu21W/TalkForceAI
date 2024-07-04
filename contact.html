@@ -48,8 +48,9 @@
                         <nav class="menu-block" id="append-menu-header">
                             <div class="mobile-menu-head">
                                 <div class="go-back">
-                                    <img class="dropdown-icon" src="assets/img/icon-black-long-arrow-right.svg"
-                                        alt="cheveron-right" width="16" height="16" />
+                                    <img loading="lazy" decoding="async" class="dropdown-icon"
+                                        src="assets/img/icon-black-long-arrow-right.svg" alt="cheveron-right" width="16"
+                                        height="16" />
                                 </div>
                                 <div class="current-menu-title"></div>
                                 <div class="mobile-menu-close">&times;</div>
@@ -59,16 +60,27 @@
                                     <a class='nav-link-item' href='about.html'>Home</a>
                                 </li> -->
                                 <li class="nav-item">
-                                    <a class='nav-link-item' href='index.html#demos'>Demos</a>
+                                    <a class='nav-link-item' href='../index.html'>Home</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class='nav-link-item' href='index.html#process'>Process</a>
+                                    <a class='nav-link-item' href='../index.html#faq'>FAQs</a>
                                 </li>
+                                <li class="nav-item nav-item-has-children">
+                                    <a href='../calculators/cost-savings-calculator.html' class="nav-link-item drop-trigger">Calculators
+                                        <img class="dropdown-icon" src="../assets/img/cheveron-right.svg"
+                                            alt="cheveron-right" width="16" height="16" /></a>
+                                    <ul class="sub-menu" id="submenu-2">
+                                        <li class="sub-menu--item">
+                                            <a href='../calculators/cost-savings-calculator.html'>Cost Savings
+                                                Calculator</a>
+                                        </li>
+                                        <!-- <li class="sub-menu--item">
+                                            <a href='calculators/roi-calculator.html'>Roi Calculator</a>
+                                        </li> -->
+                                    </ul>
                                 <li class="nav-item">
-                                    <a class='nav-link-item' href='index.html#features'>Features</a>
+                                    <a class='nav-link-item' href='../help-center.html'>Help Center</a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class='nav-link-item' href='index.html#faq'>FAQs</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class='nav-link-item' href='#'>Contact</a>
@@ -82,6 +94,8 @@
                     <div class="flex items-center gap-6">
                         <!-- <a class='hidden border-b-2 border-transparent font-bold text-white transition-all duration-300 hover:border-colorOrangyRed hover:text-colorOrangyRed lg:inline-block'
                             href=''>Contact</a> -->
+                                <a class='hidden border-b-2 border-transparent font-bold text-white transition-all duration-300 lg:inline-block'
+                            target="_blank" href='https://app.talkforceai.com/'>Login</a>
                         <a class='button hidden rounded-[50px] border-none bg-colorViolet text-white after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-white lg:inline-block'
                             href='https://cal.com/talkforceai/discoverycall' target="_blank"> Book Discovery Call</a>
                         <!-- Responsive Offcanvas Menu Button -->
@@ -403,6 +417,7 @@
                                     Book a Discovery Call
                                     <img src="assets/img/th-2/icon-white-long-arrow-right.svg"
                                         alt="icon-white-long-arrow-right" /></a>
+                                        
                                 <!-- <a href="https://www.example.com/"
                                     class=" button relative z-[1] inline-flex items-center gap-3 rounded-[50px] border-white bg-transparent py-[18px] text-white after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-white">
                                     Contact Us
