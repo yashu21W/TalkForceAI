@@ -16,6 +16,69 @@
   position: relative;
   margin-right: 35px;
 }
+.fade-box {
+  /* Define the size of the gradient box */
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, 
+              rgba(0, 0, 0, 1) 0%,     /* Solid black at the top */
+              rgba(0, 0, 0, 1) 80%,    /* Solid black covering most of the box */
+              rgba(50, 28, 164, 0.8) 100%); /* Fade to violet at the bottom */
+  z-index: 0; /* Ensure it's on top of the background but below the content */
+}
+
+.logo-container {
+  margin-bottom: 30px;
+   /* Adjust the gap between the rows */
+}
+.logo-background {
+  background: linear-gradient(to bottom, 
+  rgba(0, 0, 0, 1) 0%,     /* Solid black at the top */
+  rgba(0, 0, 0, 1) 30%,    /* Solid black covering most of the box */
+  rgba(50, 28, 164, 0.8) 100%); /* Grey color */
+  padding: 20px; /* Optional padding for spacing */
+  border-radius: 20px; /* Optional rounded corners */
+}
+
+
+
+.logo-box {
+  background-color: white;
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  box-shadow: 0 0 10px  rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  /* Set width of the small logo boxes */
+  height: 100px;
+  /* Set height of the small logo boxes */
+}
+
+
+.logo {
+  height: 75px;
+  /* Decrease the height to make logos smaller */
+  width: auto;
+  /* Maintain aspect ratio */
+  display: block;
+  margin: 0 30px;
+  object-fit: contain;
+}
+
+.logos-wrapper {
+  display: flex;
+  gap: 30px;
+  width: 200%;
+
+
+  /* Adjust the spacing between logos */
+  /*animation: slide 15s linear infinite; /* Animation for sliding */
+}
+
+
 
 @media (min-width: 576px) {
   .site-navbar {
@@ -277,53 +340,45 @@
   }
 }
 
-@-webkit-keyframes slideLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(100%);
-  }
 
-  100% {
-    opacity: 1;
-    transform: translateX(0%);
-  }
-}
 
 @keyframes slideLeft {
   0% {
-    opacity: 0;
+
     transform: translateX(100%);
   }
 
   100% {
-    opacity: 1;
-    transform: translateX(0%);
+
+    transform: translateX(-100%);
   }
 }
 
-@-webkit-keyframes slideRight {
-  0% {
-    opacity: 1;
-    transform: translateX(0%);
-  }
-
-  100% {
-    opacity: 0;
-    transform: translateX(100%);
-  }
+.left-slide {
+  top: 100px;
+  /* Position the second row below the first row with a gap */
+  animation: slideLeft 20s linear infinite;
+  width: 200%;
 }
 
 @keyframes slideRight {
   0% {
-    opacity: 1;
-    transform: translateX(0%);
+
+    transform: translateX(-100%);
   }
 
   100% {
-    opacity: 0;
+
     transform: translateX(100%);
   }
 }
+
+.right-slide {
+  top: 0;
+  width: 200%;
+  animation: slideRight 20s linear infinite;
+}
+
 
 .site-menu-main {
   margin-bottom: 0;
@@ -331,6 +386,7 @@
   display: flex;
   flex-direction: row;
 }
+
 
 @media (width < 992px) {
   .site-menu-main {
@@ -854,6 +910,7 @@
     margin-bottom: 15px;
   }
 
+
   .menu-overlay {
     position: fixed;
     background-color: rgba(0, 0, 0, 0.5);
@@ -871,6 +928,7 @@
     visibility: visible;
     opacity: 1;
   }
+
 }
 
 /*Custom Css for menu*/
@@ -878,6 +936,7 @@
   .has-megamenu ul {
     margin-left: auto;
   }
+
 
   .site-menu-main a {
     display: flex;
@@ -888,6 +947,7 @@
     margin-left: 15px;
     font-size: 15px;
   }
+
 }
 
 @media (min-width: 1200px) {
