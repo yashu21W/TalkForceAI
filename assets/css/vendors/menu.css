@@ -34,6 +34,9 @@
 
 .logo-container {
   margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+ 
   /* Adjust the gap between the rows */
 }
 
@@ -368,8 +371,9 @@
 .left-slide {
   top: 100px;
   /* Position the second row below the first row with a gap */
-  animation: slideLeft 20s linear infinite;
+  animation: slideLeft 25s linear infinite;
   width: 200%;
+  
 }
 
 @keyframes slideRight {
@@ -387,7 +391,8 @@
 .right-slide {
   top: 0;
   width: 200%;
-  animation: slideRight 20s linear infinite;
+  animation: slideRight 25s linear infinite;
+ 
 }
 
 
