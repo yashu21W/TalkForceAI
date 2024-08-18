@@ -479,6 +479,7 @@ h1 {
     font-size: 3.75rem;
     line-height: 1;
   }
+
 }
 
 @media (min-width: 992px) {
@@ -659,7 +660,9 @@ h5 {
 @media (min-width: 768px) {
   .container {
     max-width: 768px;
+    
   }
+  
 }
 
 
@@ -683,8 +686,9 @@ h5 {
 
 .button {
   position: relative;
-  z-index: 1;
-  display: inline-flex;
+  z-index: 999;
+  display: flex;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
   overflow: hidden;
   border-width: 1px;
   padding-left: 25px;
@@ -2890,7 +2894,7 @@ h5 {
   position: relative;
   bottom: -50;
   left: 50%;
-  z-index: 2;
+  z-index: 999;
   margin-top: 2rem;
   display: flex;
   --tw-translate-x: -50%;

@@ -22,6 +22,7 @@ body::-webkit-scrollbar-thumb {
   width: 10px;
 }
 
+
 @media (min-width: 992px) {
   .hero-img {
     width: 80%;
@@ -215,6 +216,82 @@ body::-webkit-scrollbar-thumb {
 .horizontal-slide-from-left-to-right {
   animation: horizontal-slide-from-left-to-right linear 10s infinite;
 }
+.company-column p {
+  margin-left: -208px;
+}
+
+.partners-column p {
+  margin-left: 0px;
+}
+
+/* Mobile (smaller screens) */
+@media (max-width: 768px) {
+  .company-column p {
+      margin-left: 10px; /* Adjust this value as needed for mobile */
+  }
+
+  .partners-column p {
+      margin-left: 40px; /* Adjust this value as needed for mobile */
+  }
+  @keyframes slideLeft {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.sub-menu {
+    display: none; /* Hide by default */
+    opacity: 0;
+    transform: translateX(100%);
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+.sub-menu.active {
+    display: block; /* Show when active */
+    opacity: 1;
+    transform: translateX(0); /* Slide in */
+}
+}
+
+/* Custom CSS */
+.global-container {
+  padding: 20px;
+}
+
+.flex {
+  display: flex;
+  gap: 40px; /* Adjust this for the gap between the columns */
+}
+
+.text-left p {
+  margin-bottom: 10px;
+}
+
+.md\\:text-left {
+  text-align: left;
+}
+
+.md\\:mb-0 {
+  margin-bottom: 0;
+}
+
+.mb-4 {
+  margin-bottom: 16px;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
 
 @keyframes horizontal-slide-from-right-to-left {
   from {
@@ -278,6 +355,7 @@ body::-webkit-scrollbar-thumb {
 .process-ml {
   margin-left: 30px;
 }
+
 
 @media (max-width: 992px) {
   .process-c {
