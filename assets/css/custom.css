@@ -217,12 +217,13 @@ body::-webkit-scrollbar-thumb {
   animation: horizontal-slide-from-left-to-right linear 10s infinite;
 }
 .company-column p {
-  margin-left: -208px;
+  margin-left: -218px;
 }
 
 .partners-column p {
-  margin-left: 0px;
+  margin-left: -5px;
 }
+
 
 /* Mobile (smaller screens) */
 @media (max-width: 768px) {
@@ -233,6 +234,7 @@ body::-webkit-scrollbar-thumb {
   .partners-column p {
       margin-left: 40px; /* Adjust this value as needed for mobile */
   }
+  
   @keyframes slideLeft {
     from {
         transform: translateX(100%);
@@ -248,7 +250,8 @@ body::-webkit-scrollbar-thumb {
     display: none; /* Hide by default */
     opacity: 0;
     transform: translateX(100%);
-    transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition */
+    transition: opacity 0.3s ease, transform 0.3s ease; 
+    padding: 5px 10px;/* Smooth transition */
 }
 
 .sub-menu.active {
@@ -262,6 +265,7 @@ body::-webkit-scrollbar-thumb {
 .global-container {
   padding: 20px;
 }
+
 
 .flex {
   display: flex;
@@ -290,6 +294,27 @@ body::-webkit-scrollbar-thumb {
 
 .justify-between {
   justify-content: space-between;
+}
+.compact-dropdown-link {
+  padding: 5px 8px; /* Reduce padding */
+  font-size: 14px;  /* Smaller font size */
+}
+
+.compact-dropdown-menu {
+  padding: 5px 0;   /* Less padding around the dropdown */
+  width: 150px;     /* Reduce the width of the dropdown */
+}
+
+.compact-dropdown-item {
+  padding: 5px 10px; /* Less padding for list items */
+  font-size: 15px;   /* Slightly smaller font size */
+  margin: 3px 0;     /* Smaller margin between items */
+}
+.sub-menu::before {
+  content: none;
+}
+html {
+  scroll-behavior: smooth;
 }
 
 

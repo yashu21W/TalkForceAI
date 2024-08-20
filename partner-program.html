@@ -15,9 +15,9 @@
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TalkForce AI</title>
+    <title>Partner-program | TalkFore AI</title>
     <meta name="description"
-        content="Discover how TalkForce AI revolutionizes customer service with advanced AI-powered virtual agents. Enhance customer satisfaction, streamline operations, and reduce costs. Schedule a demo today to see the difference!" />
+        content="Unlock New Revenue Streams with AI-Powered Phone Support1" />
     <meta property="og:image" content="https://talkforceai.com/assets/img/og.png">
     <meta property="og:title" content="Reduce Costs & Boost Efficiency: Automate Customer Care with TalkForce AI">
     <meta property="og:type" content="website">
@@ -477,7 +477,7 @@
                                 Get Certified, Gain Visibility, and Drive More Business with Talkforce AI’s Free Certification and Agency Listing Program—Plus, Earn Recurring Commissions!
 
                                 </p>
-                                <a href="https://cal.com/talkforceai/discoverycall" target="_blank"
+                                <a href="#partner-form" target="_blank"
                                     class=" button relative z-[1] inline-flex items-center gap-3 rounded-[50px] border-none bg-colorViolet py-[18px] text-white after:bg-black hover:text-white">
                                     Become a Partner
                                     <img loading="lazy" decoding="async"
@@ -1050,7 +1050,7 @@
                                     </p>
 
                                     <div class=" flex flex-wrap justify-center gap-6 mt-5" data-_animation="fade">
-                                        <a href="https://cal.com/talkforceai/discoverycall" target="_blank"
+                                        <a href="#partner-form"
                                             class=" button relative z-[1] inline-flex items-center gap-3 rounded-[50px] border-none bg-black py-[18px] text-white after:bg-white hover:text-black">
                                             Become a Partner
                                             <img loading="lazy" decoding="async"
@@ -1115,8 +1115,11 @@
                                         </div>
                                     </div>
                                 <!-- Contact Left Block -->
+                                 
                                 <div class="flex flex-col">
+                                    
                                     <div class="block rounded-[10px] bg-[#121212] px-[30px] py-[50px] shadow-[0_4px_60px_0_rgba(0,0,0,0.1)] text-white">
+                                        <div id="partner-form" class="block rounded-[10px] bg-[#121212] px-[30px] py-[50px] shadow-[0_4px_60px_0_rgba(0,0,0,0.1)] text-white"></div>
                                         <h3 class="font-clashDisplay mb-4 block text-3xl font-medium leading-[1.33] sm:text-[32px] lg:text-[48px] xl:text-[66px] text-white">
                                             Join Our Growing List of AI-Certified Agencies and Start Earning Today!
                                         </h3>
@@ -1128,6 +1131,7 @@
             
                                         <!-- Contact Form -->
                                         <form id="JuilaForm" class="flex flex-col gap-y-5 ">
+                                      
                                             <!-- Form Group -->
                                             <div class="grid grid-cols-1 gap-6">
                                                 <!-- Form Single Input -->
@@ -1206,7 +1210,7 @@
                                             </div>
                                             <!-- Submit Button -->
                                             <div>
-                                                <button id="JuilaSubmit" type="submit"
+                                                <button id="submit" type="submit"
                                                     class="button mt-5 rounded-[50px] border-none bg-black py-4 text-white after:bg-colorViolet hover:text-white">
                                                     Get Certified, Listed & Start Earning
                                                 </button>
@@ -1215,6 +1219,7 @@
                                             <!-- Form Group -->
                                         </form>
                                         <!-- Contact Form -->
+                                    </div>
                                     </div>
                                 </div>
                                 <!-- Contact Left Block -->
@@ -1332,6 +1337,30 @@
                 </div>
             </div> -->
             <!--...::: Blog Section Start :::... -->
+            <script>
+                const form2 = document.querySelector("#form");
+                const submitButton2 = document.querySelector("#submit");
+                const thanksDiv2 = document.getElementById("form-thanks");
+                const scripturl = 'https://script.google.com/macros/s/AKfycbz3TTHsYrToPumCXay2n2gyhabUWYROJSBlOpRvGW_qa2YVP2t0V5O3eiVqg4W4RCL3_Q/exec';
+
+                form2.addEventListener('submit', e => {
+                    e.preventDefault();
+                    submitButton2.disabled = true;
+                    submitButton2.textContent = "Pigeons flying! 🕊... "; // Change the button text to indicate processing
+                    let requestBody = new FormData(form2);
+                    fetch(scripturl, { method: 'POST', body: requestBody })
+                        .then(response => {
+                            form.classList.add("hidden"); // Hide the form directly
+                            thanksDiv2.classList.remove("hidden"); // Show the thanks message
+                            submitButton2.textContent = "Sent!"; // Optionally change the button text after successful submission
+                        })
+                        .catch(error => {
+                            submitButton2.textContent = "Failed, Try Again"; // Change the button text if failed
+                            submitButton2.disabled = false; // Re-enable the button for possible re-submission
+                        });
+                });
+            </script>
+
 
 
         </main>
@@ -1431,6 +1460,7 @@
                                         <a href="contact.html" class="text-gray-700 hover:text-gray-900">Contact</a>
                                     </p>
                                 </div>
+                                
                             
                                 <!-- Partners Column -->
                                 <div class="text-left mb-4 md:mb-0 partners-column">
@@ -1460,6 +1490,7 @@
 
     <!-- Main js -->
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/scroll.js"></script>
 
 </body>
 
