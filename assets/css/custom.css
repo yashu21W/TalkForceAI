@@ -2,6 +2,36 @@ body::-webkit-scrollbar {
   width: 10px;
 }
 
+
+@layer utilities {
+  .text-huge {
+    font-size: 50px;
+    text-align: center;
+  }
+
+  @media (min-width: 640px) {
+    .text-huge {
+      font-size: 100px;
+      text-align: center;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .text-huge {
+      font-size: 120px;
+      text-align: center;
+    }
+  
+  }
+  @media (min-width: 1000px) {
+    .text-huge {
+      font-size: 150px;
+      text-align: center;
+    }
+  }
+}
+
+
 body::-webkit-scrollbar-track {
   background-color: transparent;
 }
