@@ -454,19 +454,11 @@
                     <!-- Section Container -->
                     <div class="global-container">
                         <div class="breadcrumb-block">
-                            <h1 class="text-3xl font-normal !font-normal">  
-                                
-                                
-                                
-                                Take Our 5-Minute Assessment to Optimize Your Customer Service and Prepare for AI Integration
-                                
-                                
-                                
-                                
-                                
-                                
-                              </h1>
-                           
+                            <h1 class="pad text-3xl font-normal !font-normal">
+                                Take Our 5-Minute Assessment to Optimize Your Customer Service and Prepare
+                                for AI Integration
+                            </h1>
+
                         </div>
                     </div>
                     <!-- Section Container -->
@@ -481,21 +473,23 @@
                     <div class="relative z-[1] mx-auto max-w-full rounded-[20px]">
                         <div class="sm:px-10lg:py-20 xl:px-[100px]">
                             <div class="global-container pb-20">
-                                    <div class=" order-1" data-_animation="fade-right">
-                                        <!-- Section Content Block -->
-                                        <div class="mb-6">
-                                            <h2
-                                                class="font-clashDisplay text-2xl font-medium leading-[1.06] sm:text-[22px] lg:text-[36px] xl:text-[46px] text-center">
-                                                By completing this quick 5-minute questionnaire, you'll take the first step towards
-                                optimizing your customer service operations and
-                                preparing your business for AI integration. This assessment will help you identify areas for
-                                improvement and set the foundation for a
-                                more efficient, scalable customer service solution.
-                                       </div>
-
-                                       
+                                <div class=" order-1" data-_animation="fade-right">
+                                    <!-- Section Content Block -->
+                                    <div class="mb-6">
+                                        <h2
+                                            class="font-clashDisplay text-2xl font-medium leading-[1.06] sm:text-[22px] lg:text-[36px] xl:text-[46px] text-center">
+                                            By completing this quick 5-minute questionnaire, you'll take the first step
+                                            towards
+                                            optimizing your customer service operations and
+                                            preparing your business for AI integration. This assessment will help you
+                                            identify areas for
+                                            improvement and set the foundation for a
+                                            more efficient, scalable customer service solution.
                                     </div>
-                                    <!-- Content Left Block -->
+
+
+                                </div>
+                                <!-- Content Left Block -->
                             </div>
                         </div>
                     </div>
@@ -531,11 +525,11 @@
 
                                 <h3
                                     class="font-clashDisplay mb-4 block text-3xl font-medium leading-[1.33] sm:text-[32px] lg:text-[48px] xl:text-[66px] ">
-                                   Knowledge Based Optimizer questionnaire
+                                    Knowledge Based Optimizer questionnaire
                                 </h3>
 
 
-                                <form id="form" class="flex flex-col gap-y-5 ">
+                                <form name="submit-to-google-sheet" id="form" class="flex flex-col gap-y-5 ">
 
                                     <!-- Dropdown Questions -->
                                     <div class="grid grid-cols-1 gap-6">
@@ -609,7 +603,8 @@
                                         <!-- Question 6 -->
                                         <div class="flex flex-col gap-y-[10px]">
                                             <label for="q6" class="text-lg font-bold leading-[1.6]">How satisfied are
-                                                you with your current customer service efficiency? (Rate 1 to 5 , 1 for very bad and 5 for very good)</label>
+                                                you with your current customer service efficiency? (Rate 1 to 5 , 1 for
+                                                very bad and 5 for very good)</label>
                                             <input type="text" name="q6" id="q6"
                                                 placeholder="Please describe your satisfaction level"
                                                 class="rounded-[10px] border border-gray-300 bg-white px-6 py-[18px] text-black outline-none transition-all placeholder:text-slate-500 focus:border-colorOrangyRed"
@@ -620,35 +615,42 @@
                                         <!-- Include Select2 CSS -->
                                         <div class="flex flex-col gap-y-[10px]">
                                             <label for="q7" class="text-lg font-bold leading-[1.6]">
-                                                Which aspects of customer service consume the most time for your team? (Select all that apply)
+                                                Which aspects of customer service consume the most time for your team?
+                                                (Select all that apply)
                                             </label>
                                             <div class="relative">
-                                               
+
                                                 <div id="q7-checkboxes" class="mt-2">
                                                     <label class="block px-4 py-2 cursor-pointer">
-                                                        <input type="checkbox" value="Answering product-related questions"
-                                                            onchange="updateSelection(this)" /> Answering product-related questions
+                                                        <input type="checkbox"
+                                                            value="Answering product-related questions"
+                                                            onchange="updateSelection(this)" /> Answering
+                                                        product-related questions
                                                     </label>
                                                     <label class="block px-4 py-2 cursor-pointer">
                                                         <input type="checkbox" value="Processing returns and exchanges"
-                                                            onchange="updateSelection(this)" /> Processing returns and exchanges
+                                                            onchange="updateSelection(this)" /> Processing returns and
+                                                        exchanges
                                                     </label>
                                                     <label class="block px-4 py-2 cursor-pointer">
                                                         <input type="checkbox" value="Handling shipping inquiries"
-                                                            onchange="updateSelection(this)" /> Handling shipping inquiries
+                                                            onchange="updateSelection(this)" /> Handling shipping
+                                                        inquiries
                                                     </label>
                                                     <label class="block px-4 py-2 cursor-pointer">
                                                         <input type="checkbox" value="Resolving technical issues"
-                                                            onchange="updateSelection(this)" /> Resolving technical issues
+                                                            onchange="updateSelection(this)" /> Resolving technical
+                                                        issues
                                                     </label>
                                                     <label class="block px-4 py-2 cursor-pointer">
                                                         <input type="checkbox" value="Managing order modifications"
-                                                            onchange="updateSelection(this)" /> Managing order modifications
+                                                            onchange="updateSelection(this)" /> Managing order
+                                                        modifications
                                                     </label>
                                                 </div>
                                             </div>
                                         </div>
-                                        
+
 
 
                                         <!-- Question 8 -->
@@ -667,7 +669,8 @@
                                         <!-- Question 9 -->
                                         <div class="flex flex-col gap-y-[10px]">
                                             <label for="q9" class="text-lg font-bold leading-[1.6]">How comfortable are
-                                                you with the idea of using AI for customer interactions?  (Rate 1 to 5 , 1 for very bad and 5 for very good)</label>
+                                                you with the idea of using AI for customer interactions? (Rate 1 to 5 ,
+                                                1 for very bad and 5 for very good)</label>
                                             <input type="text" name="q9" id="q9"
                                                 placeholder="Please describe your comfort level"
                                                 class="rounded-[10px] border border-gray-300 bg-white px-6 py-[18px] text-black outline-none transition-all placeholder:text-slate-500 focus:border-colorOrangyRed"
@@ -694,7 +697,7 @@
                                     <div>
                                         <button id="submit" type="submit"
                                             class="button mt-5 rounded-[50px] bg-black py-4 text-white after:bg-colorViolet hover:border-colorViolet hover:text-white">
-                                            Submit
+                                            Submit ->
                                         </button>
                                     </div>
                                 </form>
@@ -712,52 +715,16 @@
 
 
             <script>
-
-                const JuilaForm = document.querySelector("#JuilaForm");
-                const JuilaSubmitButton = document.querySelector("#JuilaSubmit");
-                const JuilaThanksDiv = document.getElementById("Juila-thanks");
-                const JuilaScriptURL = 'https://script.google.com/macros/s/AKfycbyqntRh1fxZvEmotK2T5lMcIaa2roIgkc4sRkyAXpVC3uDku315MvOyEnZQCQKiM4IL/exec';
-
-                JuilaForm.addEventListener('submit', e => {
-                    e.preventDefault();
-                    JuilaSubmitButton.disabled = true;
-                    JuilaSubmitButton.textContent = "Waking Up Juila 🕒..."; // Change the button text to indicate processing
-                    let requestBody = new FormData(JuilaForm);
-                    fetch(JuilaScriptURL, { method: 'POST', body: requestBody })
-                        .then(response => {
-                            JuilaForm.style.display = "none";  // Hide the form
-                            JuilaThanksDiv.classList.remove("hidden"); // Show the thanks message
-                            JuilaSubmitButton.textContent = "Submitted"; // Optionally change the text to 'Submitted' or similar
-                        })
-                        .catch(error => {
-                            JuilaForm.style.display = "none";  // Even on error, hide the form
-                            JuilaThanksDiv.classList.remove("hidden"); // Show the thanks message
-                            JuilaSubmitButton.textContent = "Try Again"; // Suggest retrying if there was an error
-                            JuilaSubmitButton.disabled = false; // Re-enable the button to allow retry
-                        });
-                });
-
-                const form = document.querySelector("#form");
-                const submitButton = document.querySelector("#submit");
-                const thanksDiv = document.getElementById("form-thanks");
-                const scriptURL = 'https://script.google.com/macros/s/AKfycbz3TTHsYrToPumCXay2n2gyhabUWYROJSBlOpRvGW_qa2YVP2t0V5O3eiVqg4W4RCL3_Q/exec';
-
+                const scriptURL = 'https://script.google.com/macros/s/AKfycby08GwddUq4p-fLR6AqZTF5GX_FUTJq8G9VX1tBRhbEfgv8u5hsNKSZm0Y73WcIfZrrbQ/exec'
+                const form = document.forms['submit-to-google-sheet']
+                console.log("form", form)
                 form.addEventListener('submit', e => {
-                    e.preventDefault();
-                    submitButton.disabled = true;
-                    submitButton.textContent = "Pigeons flying! 🕊... "; // Change the button text to indicate processing
-                    let requestBody = new FormData(form);
-                    fetch(scriptURL, { method: 'POST', body: requestBody })
-                        .then(response => {
-                            form.classList.add("hidden"); // Hide the form directly
-                            thanksDiv.classList.remove("hidden"); // Show the thanks message
-                            submitButton.textContent = "Sent!"; // Optionally change the button text after successful submission
-                        })
-                        .catch(error => {
-                            submitButton.textContent = "Failed, Try Again"; // Change the button text if failed
-                            submitButton.disabled = false; // Re-enable the button for possible re-submission
-                        });
-                });
+                    console.log('click hua')
+                    e.preventDefault()
+                    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                        .then(response => console.log('Success!', response))
+                        .catch(error => console.error('Error!', error.message))
+                })
             </script>
 
 
