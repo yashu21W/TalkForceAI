@@ -448,11 +448,60 @@
             <!--...::: Breadcrumb Section Start :::... -->
 
             <!--...::: Breadcrumb Section End :::... -->
+            <section id="section-breadcrumb">
+                <!-- Section Spacer -->
+                <div class="breadcrumb-wrapper">
+                    <!-- Section Container -->
+                    <div class="global-container">
+                        <div class="breadcrumb-block">
+                            <h1 class="text-3xl font-normal !font-normal">  
+                                
+                                
+                                
+                                Take Our 5-Minute Assessment to Optimize Your Customer Service and Prepare for AI Integration
+                                
+                                
+                                
+                                
+                                
+                                
+                              </h1>
+                           
+                        </div>
+                    </div>
+                    <!-- Section Container -->
+                </div>
+                <!-- Section Spacer -->
+            </section>
 
+            <section id="feature-section">
+                <!-- Section Spacer -->
+                <div class="">
+                    <!-- Section Container -->
+                    <div class="relative z-[1] mx-auto max-w-full rounded-[20px]">
+                        <div class="sm:px-10lg:py-20 xl:px-[100px]">
+                            <div class="global-container pb-20">
+                                    <div class=" order-1" data-_animation="fade-right">
+                                        <!-- Section Content Block -->
+                                        <div class="mb-6">
+                                            <h2
+                                                class="font-clashDisplay text-2xl font-medium leading-[1.06] sm:text-[22px] lg:text-[36px] xl:text-[46px] text-center">
+                                                By completing this quick 5-minute questionnaire, you'll take the first step towards
+                                optimizing your customer service operations and
+                                preparing your business for AI integration. This assessment will help you identify areas for
+                                improvement and set the foundation for a
+                                more efficient, scalable customer service solution.
+                                       </div>
 
+                                       
+                                    </div>
+                                    <!-- Content Left Block -->
+                            </div>
+                        </div>
+                    </div>
+            </section>
 
-
-            <div class="mx-5 global-container h-[400px] flex items-center justify-center text-center">
+            <!-- <div class="mx-5 global-container h-[500px] !h-[500px]  flex items-center justify-center text-center">
                 <p class="text-2xl">
                     By completing this quick 5-minute questionnaire, you'll take the first step towards
                     optimizing your customer service operations and
@@ -461,7 +510,11 @@
                     more efficient, scalable customer service solution.
                 </p>
             </div>
-            
+             -->
+            <div class="main-wrapper ">
+
+                <p></p>
+            </div>
             <section class="contact-section">
                 <!-- Section Spacer -->
                 <div class="pb-40 xl:pb-[200px]">
@@ -478,7 +531,7 @@
 
                                 <h3
                                     class="font-clashDisplay mb-4 block text-3xl font-medium leading-[1.33] sm:text-[32px] lg:text-[48px] xl:text-[66px] ">
-                                    5-Minute Questionnaire:
+                                   Knowledge Based Optimizer questionnaire
                                 </h3>
 
 
@@ -556,7 +609,7 @@
                                         <!-- Question 6 -->
                                         <div class="flex flex-col gap-y-[10px]">
                                             <label for="q6" class="text-lg font-bold leading-[1.6]">How satisfied are
-                                                you with your current customer service efficiency?</label>
+                                                you with your current customer service efficiency? (Rate 1 to 5 , 1 for very bad and 5 for very good)</label>
                                             <input type="text" name="q6" id="q6"
                                                 placeholder="Please describe your satisfaction level"
                                                 class="rounded-[10px] border border-gray-300 bg-white px-6 py-[18px] text-black outline-none transition-all placeholder:text-slate-500 focus:border-colorOrangyRed"
@@ -564,25 +617,39 @@
                                         </div>
 
                                         <!-- Question 7 -->
+                                        <!-- Include Select2 CSS -->
                                         <div class="flex flex-col gap-y-[10px]">
-                                            <label for="q7" class="text-lg font-bold leading-[1.6]">Which aspects of
-                                                customer service consume the most time for your team? (Select all that
-                                                apply)</label>
-                                            <select name="q7[]" id="q7"
-                                                class="rounded-[10px] border border-gray-300 bg-white px-6 py-[18px] text-black outline-none transition-all placeholder:text-slate-500 focus:border-colorOrangyRed"
-                                                multiple required style="min-height: 150px;">
-                                                <option value="Answering product-related questions">Answering
-                                                    product-related questions</option>
-                                                <option value="Processing returns and exchanges">Processing returns and
-                                                    exchanges</option>
-                                                <option value="Handling shipping inquiries">Handling shipping inquiries
-                                                </option>
-                                                <option value="Resolving technical issues">Resolving technical issues
-                                                </option>
-                                                <option value="Managing order modifications">Managing order
-                                                    modifications</option>
-                                            </select>
+                                            <label for="q7" class="text-lg font-bold leading-[1.6]">
+                                                Which aspects of customer service consume the most time for your team? (Select all that apply)
+                                            </label>
+                                            <div class="relative">
+                                               
+                                                <div id="q7-checkboxes" class="mt-2">
+                                                    <label class="block px-4 py-2 cursor-pointer">
+                                                        <input type="checkbox" value="Answering product-related questions"
+                                                            onchange="updateSelection(this)" /> Answering product-related questions
+                                                    </label>
+                                                    <label class="block px-4 py-2 cursor-pointer">
+                                                        <input type="checkbox" value="Processing returns and exchanges"
+                                                            onchange="updateSelection(this)" /> Processing returns and exchanges
+                                                    </label>
+                                                    <label class="block px-4 py-2 cursor-pointer">
+                                                        <input type="checkbox" value="Handling shipping inquiries"
+                                                            onchange="updateSelection(this)" /> Handling shipping inquiries
+                                                    </label>
+                                                    <label class="block px-4 py-2 cursor-pointer">
+                                                        <input type="checkbox" value="Resolving technical issues"
+                                                            onchange="updateSelection(this)" /> Resolving technical issues
+                                                    </label>
+                                                    <label class="block px-4 py-2 cursor-pointer">
+                                                        <input type="checkbox" value="Managing order modifications"
+                                                            onchange="updateSelection(this)" /> Managing order modifications
+                                                    </label>
+                                                </div>
+                                            </div>
                                         </div>
+                                        
+
 
                                         <!-- Question 8 -->
                                         <div class="flex flex-col gap-y-[10px]">
@@ -600,7 +667,7 @@
                                         <!-- Question 9 -->
                                         <div class="flex flex-col gap-y-[10px]">
                                             <label for="q9" class="text-lg font-bold leading-[1.6]">How comfortable are
-                                                you with the idea of using AI for customer interactions?</label>
+                                                you with the idea of using AI for customer interactions?  (Rate 1 to 5 , 1 for very bad and 5 for very good)</label>
                                             <input type="text" name="q9" id="q9"
                                                 placeholder="Please describe your comfort level"
                                                 class="rounded-[10px] border border-gray-300 bg-white px-6 py-[18px] text-black outline-none transition-all placeholder:text-slate-500 focus:border-colorOrangyRed"
