@@ -409,9 +409,9 @@
                                         <img class="dropdown-icon" src="../assets/img/icon-black-cheveron-right.svg"
                                             alt="cheveron-right" width="16" height="16" />
                                     </a>
-                                    <ul class="sub-menu compact-dropdown-menu" id="submenu-3">
+                                    <ul class="sub-menu font-semibold compact-dropdown-menu" id="submenu-3">
                                         <li class="compact-dropdown-item">
-                                            <a href='/case-study/movophoto.html'>Movophoto</a>
+                                            <a href='/case-study/movo.html'>Movo</a>
                                         </li>
                                         <li class="compact-dropdown-item">
                                             <a href='/case-study/toughtrucks.html'>Toughtrucks</a>
@@ -735,6 +735,66 @@
 
                                             </select>
                                         </div>
+                                        <!-- Question 10 -->
+                                        <div class="flex flex-col gap-y-[10px]">
+                                            <label
+                                                for="Enter your name:"
+                                                class="text-lg font-bold leading-[1.6]">Enter your name:
+                                            </label>
+                                            <input type="text"
+                                                name="Enter your name:"
+                                                id="q10" placeholder="Enter your name"
+                                                class="rounded-[10px] border border-gray-300 bg-white px-6 py-[18px] text-black outline-none transition-all placeholder:text-slate-500 focus:border-colorOrangyRed"
+                                                required />
+                                        </div>
+                                         <!-- Question 11 -->
+                                         <div class="flex flex-col gap-y-[10px]">
+                                            <label
+                                                for="Company:"
+                                                class="text-lg font-bold leading-[1.6]">Company:
+                                            </label>
+                                            <input type="text"
+                                                name="Company:"
+                                                id="q11" placeholder="Company"
+                                                class="rounded-[10px] border border-gray-300 bg-white px-6 py-[18px] text-black outline-none transition-all placeholder:text-slate-500 focus:border-colorOrangyRed"
+                                                required />
+                                        </div>
+                                         <!-- Question 12 -->
+                                         <div class="flex flex-col gap-y-[10px]">
+                                            <label
+                                                for="Website:"
+                                                class="text-lg font-bold leading-[1.6]">Website:
+                                            </label>
+                                            <input type="text"
+                                                name="Website:"
+                                                id="q12" placeholder="Website"
+                                                class="rounded-[10px] border border-gray-300 bg-white px-6 py-[18px] text-black outline-none transition-all placeholder:text-slate-500 focus:border-colorOrangyRed"
+                                                required />
+                                        </div>
+                                         <!-- Question 13 -->
+                                         <div class="flex flex-col gap-y-[10px]">
+                                            <label
+                                                for="Email address:"
+                                                class="text-lg font-bold leading-[1.6]">Email address:
+                                            </label>
+                                            <input type="email"
+                                                name="Email address:"
+                                                id="q13" placeholder="Email address"
+                                                class="rounded-[10px] border border-gray-300 bg-white px-6 py-[18px] text-black outline-none transition-all placeholder:text-slate-500 focus:border-colorOrangyRed"
+                                                required />
+                                        </div>
+                                         <!-- Question 14 -->
+                                         <div class="flex flex-col gap-y-[10px]">
+                                            <label
+                                                for="Phone number:"
+                                                class="text-lg font-bold leading-[1.6]">Phone number:
+                                            </label>
+                                            <input type="text"
+                                                name="Phone number:"
+                                                id="q14" placeholder="Phone number"
+                                                class="rounded-[10px] border border-gray-300 bg-white px-6 py-[18px] text-black outline-none transition-all placeholder:text-slate-500 focus:border-colorOrangyRed"
+                                                required />
+                                        </div>
                                     </div>
                                     <!-- Form Group -->
 
@@ -776,6 +836,8 @@
                             dataObject[key] = value;
                         }
                     });
+
+                    console.log("dataObject: ",dataObject);
 
                     const encodedData = new URLSearchParams(dataObject);
 
@@ -908,7 +970,7 @@
                                     </p>
                                     <p class="mb-4"> <a href="agency.html"
                                             class="text-gray-700 hover:text-gray-900">Talkforce AI Partners</a></p>
-                                    <p class="mb-4"> <a href="../case-study/movophoto.html"
+                                    <p class="mb-4"> <a href="../case-study/movo.html"
                                             class="text-gray-700 hover:text-gray-900">Case Study</a></p>
                                 </div>
                             </div>
