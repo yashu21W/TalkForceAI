@@ -832,7 +832,7 @@
                     const dataObject = {};
 
                     formData.forEach((value, key) => {
-                        console.log(`Field Name: ${key}, Value: ${value}`);
+                        // console.log(`Field Name: ${key}, Value: ${value}`);
                         if (dataObject[key]) {
                             dataObject[key] += `, ${value}`;
                         } else {
@@ -840,7 +840,7 @@
                         }
                     });
 
-                    console.log("dataObject: ",dataObject);
+                    // console.log("dataObject: ",dataObject);
 
                     const encodedData = new URLSearchParams(dataObject);
 
