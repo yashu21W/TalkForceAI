@@ -825,9 +825,12 @@
                 const scriptURL = 'https://script.google.com/macros/s/AKfycbx4vyJmAY0QYS91GxzK4I9Mtna-cl-uDp-UWLhVkL8CRYH4ivMJk2Cw0ughVJiCck1WLg/exec';
                 const form = document.forms['submit-to-google-sheet'];
 
+                const submitButton = document.querySelector("#submit");
+
                 form.addEventListener('submit', e => {
                     e.preventDefault();
-
+                    submitButton.disabled = true;
+                    submitButton.textContent = "Pigeons flying! 🕊... "; // Change the button text to indicate processing
                     const formData = new FormData(form);
                     const dataObject = {};
 
@@ -847,9 +850,13 @@
                     })
                         .then(response => response.text())
                         .then(result => {
+                            alert("Thanks for filing the form.")
                             window.location.replace('personalized-ecommerce-package.html');
                         })
-                        .catch(error => console.error('Error!', error.message));
+                        .catch(error => {
+                            submitButton.textContent = "Failed, Try Again"; // Change the button text if failed
+                            submitButton.disabled = false; // Re-enable the button for possible re-submission
+                        });
                 });
 
             </script>
