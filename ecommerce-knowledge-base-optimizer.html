@@ -451,7 +451,7 @@
 
     <!-- Hero Section -->
     <section
-        class="relative overflow-hidden w-[80vw] mx-auto bg-gray-400 rounded-md bg-clip-padding backdrop-filter mt-40 backdrop-blur-sm bg-opacity-20 border border-gray-500">
+        class="relative overflow-hidden w-[80vw] mx-auto px-2 bg-gray-400 rounded-md bg-clip-padding backdrop-filter mt-40 backdrop-blur-sm bg-opacity-20 border border-gray-500">
         <!-- Background Circles -->
         <div class="absolute inset-0 blur-3xl">
             <div
@@ -462,15 +462,17 @@
             </div>
         </div>
 
-        <div class="relative h-full flex py-10 md:px-8 px-2 flex-col justify-center items-center text-center">
-            <h1 class=" text-3xl text-white font-bold leading-tight md:text-5xl">
+        <div class="relative h-full flex py-10 md:px-8 lg:px-10 flex-col justify-center items-center text-center">
+            <h1 class="font-clashDisplay text-3xl text-white font-bold leading-tight md:text-5xl">
                 Optimize <span class="italic font-semibold">Your E-commerce Store</span><br> for 24/7 AI-Powered Support
             </h1>
 
-            <div class="flex flex-col-reverse lg:flex-row lg:items-center justify-center lg:justify-end w-full">
+            <div
+                class="flex flex-col-reverse lg:flex-row lg:items-center justify-center h-full lg:justify-end w-[100%]">
                 <!-- Left Section -->
-                <div class="lg:w-[50%] p-4 lg:p-2 flex flex-col items-center justify-end">
-                    <p class="mb-4 lg:max-w-[90%] text-base px-10 lg:px-0 lg:text-right text-center text-gray-300 lg:text-lg lg:items-end">
+                <div class="lg:w-[50%] p-4 lg:p-2 h-full flex flex-col items-center justify-end">
+                    <p
+                        class="mb-4 lg:max-w-[90%] w-[100%] mx-auto text-base px-10 lg:px-0 lg:text-right text-center text-gray-300 lg:text-lg lg:items-end">
                         Prepare your store for AI integration and seamless customer service around the clock with our
                         E-commerce Knowledge Base Optimizer. It only takes 5 minutes!
                     </p>
@@ -481,68 +483,92 @@
                 </div>
 
                 <!-- Right Section -->
-                <div class="w-[50%] mx-auto flex justify-start">
-                    <img src="./assets/img/main.png" alt="AI-powered support on laptop" class="w-full max-w-sm" />
+                <div class="md:w-[50%] w-[80%] mx-auto flex flex-col justify-center items-center space-y-2">
+                    <div class="w-[100%] flex flex-col items-center mx-auto">
+                        <img src="./assets/img/main.png" alt="AI-powered support on laptop" class="w-full max-w-sm" />
+                        <p class="text-sm md:text-start text-center text-white/80">🛑 No Hallucinations - Reliable AI
+                            Voice
+                            Agents with
+                            100% Accuracy.
+                        </p>
+                    </div>
                 </div>
+
             </div>
 
         </div>
     </section>
 
     <h1
-        class="mb-6 w-[80vw] md:w-full mx-auto text-center md:text-5xl text-3xl text-white font-light mt-16 leading-tight">
-        Discover how TalkForce AI can revolutionize your business
+        class="mb-6 mt-[100px] w-[80vw] md:w-full mx-auto text-center md:text-5xl font-clashDisplay text-3xl text-white font-light mt-16 leading-tight">
+        Transform Your E-commerce Store with TalkForce AI
     </h1>
 
     <!-- Features Section -->
 
-    <section class="relative overflow-hidden py-10 mx-auto mb-20">
-        <!-- Background Circles -->
-        <div class="absolute inset-0 blur-3xl">
-            <div
-                class="absolute -bottom-40 -left-40 h-[500px] w-[500px] rounded-full bg-[radial-gradient(circle,rgba(50,28,164,0.15),transparent)]">
-            </div>
-            <div
-                class="absolute -right-40 -top-40 h-[500px] w-[500px] rounded-full bg-[radial-gradient(circle,rgba(50,28,164,0.15),transparent)]">
-            </div>
-        </div>
-        <div class="flex flex-col">
-            <div class="relative z-10 mx-auto flex max-w-7xl flex-col items-center justify-between px-6 lg:flex-row">
-                <!-- Image -->
-                <div class="mb-12 flex w-full justify-center lg:mb-0 lg:w-1/2 ">
-                    <img src="./assets/img/hand_monbile.jpeg" alt="TalkForce AI on phone"
-                        class="w-[300px] max-w-md rounded-md border-[6px] border-white" />
-                </div>
+    <section class="overflow-hidden w-[80vw] flex-col flex py-10 mx-auto mb-20">
 
-                <!-- Text Content -->
-                <div class="w-full text-center lg:w-1/2 lg:text-left">
-                    <p class="mb-6 text-lg text-gray-300 md:text-xl">
-                        As an e-commerce store owner, you know the struggle of managing customer inquiries efficiently
-                        while
-                        maintaining high-quality service.
-                    </p>
-                    <p class="mb-8 text-lg text-gray-300 md:text-xl">
-                        TalkForce AI offers an AI-based conversational phone agent that can handle inbound support and
-                        sales
-                        calls, as well as outbound calls for appointments and lead qualification. To maximize the
-                        effectiveness of this powerful tool, you need a well-organized knowledge base about your company
-                        and
-                        products.
-                    </p>
+        <div class="flex flex-col lg:flex-row justify-center items-center">
+            <div class="border border-white/40 flex flex-col items-center gap-6 rounded-md max-w-[400px] min-h-[280px] p-4 mx-auto h-full w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border border-gray-100
+        ">
+                <div class="flex items-center gap-4 w-full">
+                    <img class="w-10" src="./assets/img/iconClock.png" alt="">
+                    <div class="font-bold text-xl">Reduce RPE (Revenue Per Employee)</div>
+                </div>
+                <div>
+                    <ul class="list-disc list-inside">
+                        <li><span class="font-bold">Increase efficiency:</span>
+                            Automate customer updates and order management.</li>
+                        <li>
+                            <span class="font-bold">Lower operational costs:</span>
+                            Optimize your team's productivity.
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <div class="w-full p-8 text-center h-full lg:text-left flex flex-col md:flex-row items-center justify-center">
-                <p class="mb-6 md:w-1/2 w-full text-lg text-gray-300 md:text-xl">
-                    By completing this quick 5-minute questionnaire, you'll take the first step towards optimizing your customer service operations and preparing your business for Al integration. This assessment will help you identify areas for improvement and set the foundation for a more efficient, scalable customer service solution.
-                </p>
-                <a href="./knowledge-base-optimizer-questionnaire.html"
-                class=" button relative z-[1] inline-flex items-center gap-3 rounded-[50px] border-none bg-colorViolet py-[18px] text-white after:bg-colorOrangyRed hover:text-white">
-                Start 5-Minute Assessment Now &rarr;
-            </a>
+            <div class="border border-white/40 flex flex-col items-center gap-6 rounded-md max-w-[400px] min-h-[280px] p-4 mx-auto h-full w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border border-gray-100
+        ">
+                <div class="flex items-center gap-2 w-full">
+                    <img class="w-10" src="./assets/img/iconClock.png" alt="">
+                    <div class="font-bold text-xl">Real-Time Order & Tracking Updates</div>
+                </div>
+                <div>
+                    <ul class="list-disc list-inside">
+                        <li><span class="font-bold">Seamless integration with Shopify:</span>
+                            Keep customers informed with automated voice updates.</li>
+                        <li>
+                            <span class="font-bold">Effortless order changes:</span>
+                            Allow customers to modify orders without hassle.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border border-white/40 flex flex-col items-center gap-6 rounded-md max-w-[400px] min-h-[280px] p-4 mx-auto h-full w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border border-gray-100
+        ">
+                <div class="flex items-center gap-2 w-full">
+                    <img class="w-10" src="./assets/img/iconSpaceship.png" alt="">
+                    <div class="font-bold text-xl">Exclusive Al Voice Solution</div>
+                </div>
+                <div>
+                    <ul class="list-disc list-inside">
+                        <li><span class="font-bold">We're the only one:</span>
+                            The first and only Al voice platform offering this level of service.</li>
+                        <li>
+                            <span class="font-bold">Supercharge your CX:</span>
+                            Deliver a superior customer experience with cutting-edge Al technology.
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
-
+        <a href="./knowledge-base-optimizer-questionnaire.html"
+            class=" button relative z-[1] inline-flex items-center gap-3 w-fit mx-auto mt-4 lg:items-end rounded-[50px] border-none bg-colorViolet py-[18px] text-white after:bg-colorOrangyRed hover:text-white">
+            Start 5-Minute Assessment Now &rarr;
+        </a>
     </section>
+
+
+
     <!--...::: Footer-2 Section Start :::... -->
     <footer id="footer-2"
         class="relative z-[1] -mt-[70px] overflow-hidden rounded-tl-[30px] rounded-tr-[30px] bg-colorLinenRuffle lg:rounded-tl-[50px] lg:rounded-tr-[50px]">
@@ -563,7 +589,8 @@
                                 Ready to Experience the Power of TalkForce AI?
                             </h2>
                             <p class="text-[22px] font-medium leading-[1.28] tracking-[1px] lg:text-[24px]">
-                                Let's explore if AI call agents are the right fit for your business—Book a Discovery Call now!</p>
+                                Let's explore if AI call agents are the right fit for your business—Book a Discovery
+                                Call now!</p>
                         </div>
                         <!-- Section Content Block -->
                         <!-- Footer Subscriber Form -->
@@ -653,7 +680,7 @@
                                 </p>
                                 <p class="mb-4"> <a href="agency.html" class="text-white hover:text-gray-600">Talkforce
                                         AI Partners</a></p>
-                                
+
                             </div>
                         </div>
                     </div>
@@ -668,16 +695,16 @@
         </div>
     </footer>
     <!--...::: Footer-2 Section End :::... -->
-     <!--Vendor js-->
-     <script src="assets/js/vendors/counterup.js" type="module"></script>
-     <script src="assets/js/vendors/swiper-bundle.min.js"></script>
-     <script src="assets/js/vendors/fslightbox.js"></script>
-     <script src="assets/js/vendors/menu.js"></script>
-     <script src="assets/js/vendors/jos.min.js"></script>
- 
-     <!-- Main js -->
-     <script src="assets/js/main.js"></script>
-     <script src="assets/js/script.js"></script>
+    <!--Vendor js-->
+    <script src="assets/js/vendors/counterup.js" type="module"></script>
+    <script src="assets/js/vendors/swiper-bundle.min.js"></script>
+    <script src="assets/js/vendors/fslightbox.js"></script>
+    <script src="assets/js/vendors/menu.js"></script>
+    <script src="assets/js/vendors/jos.min.js"></script>
+
+    <!-- Main js -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
