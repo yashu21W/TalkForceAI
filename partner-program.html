@@ -1274,10 +1274,16 @@
                                             Get Certified, Listed & Start Earning
                                         </button>
                                     </div>
-                                    
-                                    <div id="form-thanks" class="hidden fixed inset-0 flex items-center justify-center bg-gray-900 bg-opacity-50">
-                                        <div class="bg-white p-6 rounded-lg shadow-lg">
-                                            <p class="text-black text-2xl">Thanks for joining the TalkForce AI agency partner program, our team will contact you soon for further details.</p>
+
+                                    <div
+                                        class="fixed inset-0 flex items-center justify-center bg-gray-900 bg-opacity-50 p-4">
+                                        <div id="form-thanks"
+                                            class="bg-white mt-10 hidden rounded-lg shadow-xl max-w-md p-6 text-center">
+                                            <h2 class="text-2xl font-bold text-gray-800 mb-4">Thank You!</h2>
+                                            <p class="text-black text-lg">
+                                                Thanks for joining the TalkForce AI agency partner program. Our team
+                                                will contact you soon for further details.
+                                            </p>
                                         </div>
                                     </div>
                                 </form>
@@ -1431,39 +1437,34 @@
         document.addEventListener("DOMContentLoaded", function () {
             const submitButton2 = document.querySelector("#submit");
             const thanksDiv2 = document.getElementById("form-thanks");
-            const scripturl = 'https://script.google.com/macros/s/AKfycbyw1-j-uZyxj1P5TG6n88ga7_M3Nv9zSr_X-neP2SZ-dcZRTAhjjI0o6muTj9op1SEQxA/exec';
-            const form2 = document.forms['agency sign up info 1'];
-    
+            const scripturl = 'https://script.google.com/macros/s/AKfycbya0TydIwacj9SdW8VQ7eTPIQtcCUKTivY2IeLreth-oKa838Vjd2JNgnoHCtOktRlf/exec';
+            const form2 = document.forms['submit-to-google-sheet2'];
+
             form2.addEventListener('submit', e => {
                 e.preventDefault();
                 submitButton2.disabled = true;
                 submitButton2.textContent = "Pigeons flying! 🕊... ";
-    
-                // Short delay before changing text
-                setTimeout(() => {
-                    submitButton2.textContent = "Get Certified, Listed & Start Earning";
-                    submitButton2.disabled = false;
-                    thanksDiv2.classList.remove("hidden");
-    
-                    // Hide the "Will update you" message after a few seconds
-                    setTimeout(() => {
-                        thanksDiv2.classList.add("hidden");
-                    }, 2000); // Adjust the time here if you want it to disappear faster or slower
-    
-                }, 500); // Adjust the delay here (500ms is half a second)
-    
+
                 let requestBody = new FormData(form2);
                 fetch(scripturl, { method: 'POST', body: requestBody })
                     .then(response => {
                         form2.reset();
+                        // Show the thanksDiv2 immediately after the form is submitted
+                        submitButton2.textContent = "Get Certified, Listed & Start Earning";
+                        submitButton2.disabled = false;
+                        thanksDiv2.classList.remove("hidden");
                     })
                     .catch(error => {
                         console.error('Error:', error);
+                        // Show the thanksDiv2 immediately after the form is submitted
                         submitButton2.textContent = "Get Certified, Listed & Start Earning";
+                        submitButton2.disabled = false;
+                        thanksDiv2.classList.remove("hidden");
                     });
             });
         });
     </script>
+
 
 
 
