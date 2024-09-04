@@ -1273,7 +1273,12 @@
                                             class="button mt-5 rounded-[50px] border-none bg-black py-4 text-white after:bg-colorViolet hover:text-white">
                                             Get Certified, Listed & Start Earning
                                         </button>
-
+                                    </div>
+                                    
+                                    <div id="form-thanks" class="hidden fixed inset-0 flex items-center justify-center bg-gray-900 bg-opacity-50">
+                                        <div class="bg-white p-6 rounded-lg shadow-lg">
+                                            <p class="text-black text-2xl">Thanks for joining the TalkForce AI agency partner program, our team will contact you soon for further details.</p>
+                                        </div>
                                     </div>
                                 </form>
                             </div>
@@ -1394,7 +1399,7 @@
                 </div>
             </div> -->
     <!--...::: Blog Section Start :::... -->
-    <script>
+    <!-- <script>
         document.addEventListener("DOMContentLoaded", function () {
             const submitButton2 = document.querySelector("#submit");
             const thanksDiv2 = document.getElementById("form-thanks"); // Make sure this element exists in your HTML
@@ -1416,6 +1421,43 @@
                     })
                     .catch(error => {
                         submitButton2.disabled = false;
+                        console.error('Error:', error);
+                        submitButton2.textContent = "Get Certified, Listed & Start Earning";
+                    });
+            });
+        });
+    </script> -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const submitButton2 = document.querySelector("#submit");
+            const thanksDiv2 = document.getElementById("form-thanks");
+            const scripturl = 'https://script.google.com/macros/s/AKfycbz3TTHsYrToPumCXay2n2gyhabUWYROJSBlOpRvGW_qa2YVP2t0V5O3eiVqg4W4RCL3_Q/exec';
+            const form2 = document.forms['submit-to-google-sheet2'];
+    
+            form2.addEventListener('submit', e => {
+                e.preventDefault();
+                submitButton2.disabled = true;
+                submitButton2.textContent = "Pigeons flying! 🕊... ";
+    
+                // Short delay before changing text
+                setTimeout(() => {
+                    submitButton2.textContent = "Get Certified, Listed & Start Earning";
+                    submitButton2.disabled = false;
+                    thanksDiv2.classList.remove("hidden");
+    
+                    // Hide the "Will update you" message after a few seconds
+                    setTimeout(() => {
+                        thanksDiv2.classList.add("hidden");
+                    }, 2000); // Adjust the time here if you want it to disappear faster or slower
+    
+                }, 500); // Adjust the delay here (500ms is half a second)
+    
+                let requestBody = new FormData(form2);
+                fetch(scripturl, { method: 'POST', body: requestBody })
+                    .then(response => {
+                        form2.reset();
+                    })
+                    .catch(error => {
                         console.error('Error:', error);
                         submitButton2.textContent = "Get Certified, Listed & Start Earning";
                     });
