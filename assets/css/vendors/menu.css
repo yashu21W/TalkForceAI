@@ -507,17 +507,19 @@
   position: absolute;
   left: 0;
   top: 100%;
-  height: fit-content;
   margin: 0;
   padding: 12px 0;
   transition: 0.4s;
-  z-index: 4;
-  transform: translatey(20px);
+  transform: translateY(20px);
   opacity: 0;
   visibility: hidden;
   min-width: 200px;
   border-radius: 6px;
+
+  max-height: 560px;
+  overflow-y: auto;
 }
+
 
 .site-menu-main .sub-menu:before {
   position: absolute;
