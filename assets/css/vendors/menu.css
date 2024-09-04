@@ -507,6 +507,7 @@
   position: absolute;
   left: 0;
   top: 100%;
+  height: fit-content;
   margin: 0;
   padding: 12px 0;
   transition: 0.4s;
